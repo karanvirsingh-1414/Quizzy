@@ -38,6 +38,15 @@ function saveDB() {
   fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
 }
 
+// ─── Activity Logger ───────────────────────────────────────────────────────────
+function logActivity(user, action, details = '') {
+  const timestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+  const logEntry = `[${timestamp}] USER: ${user} | ACTION: ${action} | DETAILS: ${details}\n`;
+  const logFile = path.join(__dirname, 'activity.log');
+  fs.appendFileSync(logFile, logEntry);
+  console.log(logEntry.trim());
+}
+
 // Convenience aliases
 const sessions = db.sessions;
 const quizCache = db.quizCache;
@@ -81,6 +90,7 @@ app.get('/', (req, res) => res.render('index'));
 app.post('/start', (req, res) => {
   const name = req.body.name;
   if (!name) return res.redirect('/');
+  logActivity(name, 'Logged In');
   res.redirect(`/dashboard/${encodeURIComponent(name)}`);
 });
 
@@ -128,6 +138,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
         fromCache: true
       };
       saveDB();
+      logActivity(req.body.name || 'User', 'Started Quiz (Cache Hit)', filenames.join(' + '));
       return res.json({ sessionId, fromCache: true });
     }
 
@@ -137,7 +148,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     }
     isGenerating = true;
 
-    console.log(`[API CALL] Generating 100 questions. Hash: ${contentHash}`);
+    console.log(`[API CALL] Generating 50 questions. Hash: ${contentHash}`);
 
     const prompt = `
       Based on the following extracted PDF text, generate exactly 50 multiple-choice questions.
@@ -205,6 +216,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     };
 
     saveDB();
+    logActivity(req.body.name || 'User', 'Generated New Quiz (AI)', filenames.join(' + '));
     res.json({ sessionId });
 
   } catch (error) {
@@ -228,10 +240,17 @@ app.get('/quiz/:sessionId', (req, res) => {
 app.get('/result/:sessionId', (req, res) => {
   const session = sessions[req.params.sessionId];
   if (!session) return res.redirect('/');
+  
+  const score = req.query.score || 0;
+  const total = req.query.total !== undefined ? req.query.total : session.questions.length;
+  const userName = req.query.user || session.name;
+  
+  logActivity(userName, 'Completed Quiz', `Score: ${score}/${total} | File: ${session.filename}`);
+  
   res.render('result', {
-    score: req.query.score || 0,
-    total: req.query.total !== undefined ? req.query.total : session.questions.length,
-    name: req.query.user || session.name
+    score: score,
+    total: total,
+    name: userName
   });
 });
 
