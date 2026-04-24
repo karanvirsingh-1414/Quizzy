@@ -254,6 +254,31 @@ app.get('/result/:sessionId', (req, res) => {
   });
 });
 
+app.get('/admin/logs', (req, res) => {
+  const logFile = path.join(__dirname, 'activity.log');
+  if (fs.existsSync(logFile)) {
+    const logs = fs.readFileSync(logFile, 'utf8');
+    res.send(`
+      <html>
+        <head>
+          <title>Activity Logs</title>
+          <style>
+            body { background: #1a1a2e; color: #00ffcc; font-family: monospace; padding: 20px; }
+            pre { white-space: pre-wrap; word-wrap: break-word; font-size: 14px; }
+          </style>
+        </head>
+        <body>
+          <h2>Live User Activity Logs</h2>
+          <hr/>
+          <pre>${logs}</pre>
+        </body>
+      </html>
+    `);
+  } else {
+    res.send('<body style="background:#1a1a2e; color:white; font-family:sans-serif; text-align:center; padding:50px;"><h2>No activity logs found yet.</h2></body>');
+  }
+});
+
 app.listen(port, () => {
   console.log(`✅ Quiz Server running at http://localhost:${port}`);
   console.log(`📦 Cache entries loaded: ${Object.keys(quizCache).length}`);
