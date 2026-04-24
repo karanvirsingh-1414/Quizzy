@@ -30,6 +30,9 @@ function saveDB() {
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || 'no-key-provided');
 
+// Simple lock to prevent concurrent API calls burning quota
+let isGenerating = false;
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -149,6 +152,12 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       return res.json({ sessionId, fromCache: true });
     }
 
+    // Block concurrent generation — prevents quota burn on double-clicks
+    if (isGenerating) {
+      return res.status(429).json({ error: '⏳ A quiz is already being generated. Please wait for it to finish.' });
+    }
+    isGenerating = true;
+
     console.log(`[API CALL] Generating fresh quiz for hash: ${contentHash}`);
     const prompt = `
       Based on the following extracted PDF text, generate exactly 100 multiple-choice questions.
@@ -164,17 +173,10 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     `;
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-2.0-flash",  // 2.0-flash: 15 RPM free tier, valid until June 2026
       generationConfig: {
         responseMimeType: "application/json",
-      },
-      // Disable thinking for faster response on free tier
-      ...({
-        generationConfig: {
-          responseMimeType: "application/json",
-          thinkingConfig: { thinkingBudget: 0 }
-        }
-      })
+      }
     });
 
     let responseText = "";
@@ -185,12 +187,14 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       const is429 = err.status === 429 || (err.message && err.message.includes('429'));
       const is503 = err.status === 503 || (err.message && err.message.includes('503'));
       if (is429) {
-        throw new Error('⚠️ Server is busy right now. Please wait 30 seconds and try again.');
+        throw new Error('⚠️ API quota reached. Please wait 1 minute and try again.');
       }
       if (is503) {
-        throw new Error('⚠️ AI service is temporarily unavailable. Please try again in a moment.');
+        throw new Error('⚠️ AI service temporarily unavailable. Please try again in a moment.');
       }
       throw err;
+    } finally {
+      isGenerating = false;  // Always release lock
     }
     
     let parsedResult;
