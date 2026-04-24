@@ -113,7 +113,7 @@
             const sVal = String(selectedVal).trim();
             const cVal = String(correctVal).trim();
 
-            if(sVal === cVal || sVal.includes(cVal) || cVal.includes(sVal)) {
+            if(sVal === cVal) {
                 selectedBtn.classList.add('correct');
                 feedback.textContent = 'Correct ✅';
                 feedback.className = 'feedback-msg correct-text';
@@ -125,7 +125,7 @@
                 // Highlight correct option
                 btns.forEach(b => {
                     const btnVal = String(b.textContent).trim();
-                    if(btnVal === cVal || btnVal.includes(cVal) || cVal.includes(btnVal)) {
+                    if(btnVal === cVal) {
                         b.classList.add('correct');
                     }
                 });
