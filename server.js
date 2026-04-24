@@ -311,7 +311,7 @@ app.get('/admin/logs', async (req, res) => {
       logsText = allLogs.map(log => {
         const timeStr = new Date(log.timestamp).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
         return `[${timeStr}] USER: ${log.user} | ACTION: ${log.action} | DETAILS: ${log.details}`;
-      }).join('\\n');
+      }).join('\n');
     }
 
     res.send(`
