@@ -5,6 +5,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const dotenv = require('dotenv');
 const path = require('path');
 const fs = require('fs');
+const crypto = require('crypto');
 const { v4: uuidv4 } = require('uuid');
 
 dotenv.config();
@@ -38,6 +39,34 @@ app.use(express.urlencoded({ extended: true }));
 const uploadDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir);
+}
+
+// Cache directory — stores generated quizzes by PDF content hash
+// Added to .gitignore so large files don't get committed
+const cacheDir = path.join(__dirname, 'cache');
+if (!fs.existsSync(cacheDir)) {
+  fs.mkdirSync(cacheDir);
+}
+
+function getContentHash(text) {
+  return crypto.createHash('md5').update(text).digest('hex');
+}
+
+function getCachedQuiz(hash) {
+  const cachePath = path.join(cacheDir, `${hash}.json`);
+  if (fs.existsSync(cachePath)) {
+    try {
+      return JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+    } catch (e) {
+      return null;
+    }
+  }
+  return null;
+}
+
+function saveToCache(hash, questions) {
+  const cachePath = path.join(cacheDir, `${hash}.json`);
+  fs.writeFileSync(cachePath, JSON.stringify(questions, null, 2));
 }
 
 const storage = multer.diskStorage({
@@ -101,8 +130,28 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       fs.unlinkSync(file.path);
     }
 
+    // Check cache first — same PDF content = instant response, zero API call
+    const contentHash = getContentHash(combinedText.substring(0, 50000));
+    const cachedQuestions = getCachedQuiz(contentHash);
+    if (cachedQuestions) {
+      console.log(`[CACHE HIT] Serving quiz from cache for hash: ${contentHash}`);
+      const sessionId = uuidv4();
+      sessions[sessionId] = {
+        id: sessionId,
+        filename: filenames.join(' + '),
+        createdAt: new Date().toLocaleDateString(),
+        questions: cachedQuestions,
+        name: req.body.name || 'User',
+        score: 0,
+        fromCache: true
+      };
+      saveDB();
+      return res.json({ sessionId, fromCache: true });
+    }
+
+    console.log(`[API CALL] Generating fresh quiz for hash: ${contentHash}`);
     const prompt = `
-      Based on the following extracted PDF text, generate exactly 30 multiple-choice questions.
+      Based on the following extracted PDF text, generate exactly 100 multiple-choice questions.
       Output STRICTLY as a JSON object with a single key "questions" containing an array of objects.
       Each object must have exactly these keys:
       "question": "question text",
@@ -111,7 +160,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       "explanation": "short explanation"
 
       Text to analyze:
-      ${combinedText.substring(0, 30000)}
+      ${combinedText.substring(0, 50000)}
     `;
 
     const model = genAI.getGenerativeModel({
@@ -149,15 +198,21 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       parsedResult = JSON.parse(responseText);
     } catch (err) {
       console.error("AI truncated output snippet:", responseText.slice(-150));
-      throw new Error("The AI tried to generate too many questions and got cut off (token limit). Please try uploading fewer PDFs together or we can reduce the 100 question limit.");
+      throw new Error("Quiz generation was cut off. Try uploading a smaller PDF.");
     }
+
+    const questions = parsedResult.questions || [];
+
+    // Save to cache so next upload of same PDF is instant
+    saveToCache(contentHash, questions);
+    console.log(`[CACHE SAVED] ${questions.length} questions cached for hash: ${contentHash}`);
     
     const sessionId = uuidv4();
     sessions[sessionId] = {
       id: sessionId,
       filename: filenames.join(' + '),
       createdAt: new Date().toLocaleDateString(),
-      questions: parsedResult.questions || [],
+      questions,
       name: req.body.name || 'User',
       score: 0
     };
