@@ -58,28 +58,7 @@
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
             <h2 style="text-align: left; margin-bottom: 0;">Hey <%= name %> 👋</h2>
             
-            <% if (typeof globalQuizzes !== 'undefined' && globalQuizzes.length > 0) { %>
-                <button type="button" id="toggleViewBtn" class="btn-primary btn-small" onclick="toggleDashboardView()" style="background: rgba(155, 139, 244, 0.15); color: var(--primary); border: 2px solid var(--primary); box-shadow: none; font-weight: 600;">
-                    📚 Standard Default Quizzes
-                </button>
-            <% } %>
-        </div>
 
-        <!-- Standard Quizzes Section (Hidden initially) -->
-        <div id="standardArea" style="display: none;">
-            <h3 style="text-align: left; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--primary);">Standard Default Quizzes</h3>
-            <% if (typeof globalQuizzes !== 'undefined' && globalQuizzes.length > 0) { %>
-                <% globalQuizzes.forEach(quiz => { %>
-                    <div class="quiz-item" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(255,255,255,0.6); border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 1rem;">
-                        <div style="text-align: left;">
-                            <h4 style="margin-bottom: 0.25rem; color: var(--text-main);"><%= quiz.filename %></h4>
-                            <span style="font-size: 0.8rem; color: var(--text-muted);">Generated on <%= quiz.createdAt %> • <%= quiz.questions.length %> Questions</span>
-                        </div>
-                        <a href="/quiz/<%= quiz.id %>?user=<%= encodeURIComponent(name) %>" class="btn-primary btn-small" style="width: auto; padding: 0.5rem 1rem; font-size: 0.9rem; text-decoration: none;">Take Quiz</a>
-                    </div>
-                <% }) %>
-            <% } %>
-        </div>
         
         <!-- Personal Area (Visible initially) -->
         <div id="personalArea">
@@ -136,21 +115,7 @@
     </div>
 
     <script>
-        function toggleDashboardView() {
-            const standardArea = document.getElementById('standardArea');
-            const personalArea = document.getElementById('personalArea');
-            const toggleBtn = document.getElementById('toggleViewBtn');
-            
-            if (standardArea.style.display === 'none') {
-                standardArea.style.display = 'block';
-                personalArea.style.display = 'none';
-                toggleBtn.innerHTML = '📁 Upload Your Own PDF';
-            } else {
-                standardArea.style.display = 'none';
-                personalArea.style.display = 'block';
-                toggleBtn.innerHTML = '📚 Standard Default Quizzes';
-            }
-        }
+
 
         const form = document.getElementById('uploadForm');
         const uploadCard = document.getElementById('uploadCard');
