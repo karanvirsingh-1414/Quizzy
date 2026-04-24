@@ -102,51 +102,46 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     }
 
     const prompt = `
-      Based on the following extracted PDF text from multiple sources, generate a MAXIMUM of 100 multiple-choice questions. 
+      Based on the following extracted PDF text, generate exactly 30 multiple-choice questions.
       Output STRICTLY as a JSON object with a single key "questions" containing an array of objects.
-      Each object must have exactly:
+      Each object must have exactly these keys:
       "question": "question text",
-      "options": ["Option 1 text", "Option 2 text", "Option 3 text", "Option 4 text"],
-      "correctAnswer": "Option 1 text", // IMPORTANT: Must be the EXACT string of one of the options above.
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correctAnswer": "Option A", // IMPORTANT: Must be the EXACT string of one of the options above.
       "explanation": "short explanation"
 
       Text to analyze:
-      ${combinedText.substring(0, 50000)} // Reduced to 50k chars to avoid token overflow
+      ${combinedText.substring(0, 30000)}
     `;
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",  // 2.5-flash: current free tier model (1.5 is deprecated)
+      model: "gemini-2.5-flash",
       generationConfig: {
         responseMimeType: "application/json",
-      }
+      },
+      // Disable thinking for faster response on free tier
+      ...({
+        generationConfig: {
+          responseMimeType: "application/json",
+          thinkingConfig: { thinkingBudget: 0 }
+        }
+      })
     });
 
     let responseText = "";
-    let retryCount = 0;
-    const MAX_RETRIES = 5;
-    while (retryCount < MAX_RETRIES) {
-      try {
-        const response = await model.generateContent(prompt);
-        responseText = response.response.text();
-        break;
-      } catch (err) {
-        const is429 = err.status === 429 || (err.message && err.message.includes('429'));
-        const is503 = err.status === 503 || (err.message && err.message.includes('503'));
-
-        if ((is429 || is503) && retryCount < MAX_RETRIES - 1) {
-          // Exponential backoff: 15s, 30s, 60s, 120s — gives quota time to reset
-          const waitTime = Math.pow(2, retryCount) * 15000;
-          const errorType = is429 ? '429 Rate Limit' : '503 Server Busy';
-          console.log(`[${errorType}] Retrying in ${waitTime/1000}s... (attempt ${retryCount+1}/${MAX_RETRIES-1})`);
-          await new Promise(r => setTimeout(r, waitTime));
-          retryCount++;
-        } else {
-          if (is429) {
-            throw new Error('⚠️ AI quota limit reached. Please wait 1-2 minutes and try again. (Free tier: 15 requests/min)');
-          }
-          throw err;
-        }
+    try {
+      const response = await model.generateContent(prompt);
+      responseText = response.response.text();
+    } catch (err) {
+      const is429 = err.status === 429 || (err.message && err.message.includes('429'));
+      const is503 = err.status === 503 || (err.message && err.message.includes('503'));
+      if (is429) {
+        throw new Error('⚠️ Server is busy right now. Please wait 30 seconds and try again.');
       }
+      if (is503) {
+        throw new Error('⚠️ AI service is temporarily unavailable. Please try again in a moment.');
+      }
+      throw err;
     }
     
     let parsedResult;
