@@ -1,0 +1,2238 @@
+{
+  "5af39f63-cccc-430a-9815-e4d6e2a8455b": {
+    "id": "5af39f63-cccc-430a-9815-e4d6e2a8455b",
+    "filename": "LEGAL APTITUDE.pdf",
+    "createdAt": "4/24/2026",
+    "questions": [
+      {
+        "question": "Principle: A person is guilty of theft if he dishonestly takes movable property without consent. Facts: Rohan picks up a pen thinking it is his, but it belongs to the shop. Is Rohan guilty of theft?",
+        "options": [
+          "Rohan is guilty",
+          "Rohan is not guilty",
+          "Rohan must pay fine",
+          "Rohan is partially guilty"
+        ],
+        "correctAnswer": "Rohan is not guilty",
+        "explanation": "Yahan sabse important hai dishonest intention. Rohan ko laga pen uska hai → matlab usne chori karne ka socha hi nahi. Intention nahi = theft nahi. Isliye guilty nahi."
+      },
+      {
+        "question": "Principle: A contract without free consent is voidable. Facts: A forces B to sign a contract at gunpoint. What is the nature of this contract?",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Voidable",
+        "explanation": "Gunpoint = force = free consent nahi. B chahe to contract cancel kar sakta hai. Isliye voidable (optional cancel)."
+      },
+      {
+        "question": "Principle: Ignorance of law is not an excuse. Facts: Aman breaks a law saying he didn’t know it existed. Is Aman liable?",
+        "options": [
+          "Not liable",
+          "Liable",
+          "Depends",
+          "Excused"
+        ],
+        "correctAnswer": "Liable",
+        "explanation": "Law bolta hai: “Mujhe nahi pata tha” = excuse nahi. Sabko law pata hona chahiye maana jata hai. Aman phir bhi punish hoga."
+      },
+      {
+        "question": "Principle: A person has the right of private defense. Facts: X hits Y to protect himself from Y’s attack. Is X guilty?",
+        "options": [
+          "Guilty",
+          "Not guilty",
+          "Partially guilty",
+          "Civil offence"
+        ],
+        "correctAnswer": "Not guilty",
+        "explanation": "Self-defense allowed hai. Agar koi attack kare, tu apne aap ko bacha sakta hai. X ne defence mein maara = no crime."
+      },
+      {
+        "question": "Principle: A minor cannot enter into a valid contract. Facts: A 16-year-old signs a loan agreement. What is the status of this agreement?",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "Minor (18 se chhota) legal contract nahi kar sakta. Jo bhi karega wo start se hi invalid hai. Isliye void."
+      },
+      {
+        "question": "Principle: Defamation means harming someone’s reputation. Facts: A publishes false statements about B in a newspaper. What offence has A committed?",
+        "options": [
+          "No offence",
+          "Defamation",
+          "Assault",
+          "Theft"
+        ],
+        "correctAnswer": "Defamation",
+        "explanation": "False news → reputation damage. Reputation ko harm karna = defamation. Clear case."
+      },
+      {
+        "question": "Principle: Consent obtained by fraud is not valid. Facts: X lies and sells a product to Y. Is Y's consent valid?",
+        "options": [
+          "Valid consent",
+          "Invalid consent",
+          "No contract",
+          "Legal sale"
+        ],
+        "correctAnswer": "Invalid consent",
+        "explanation": "Jhoot bolke consent li → fraud. Fraud wali consent valid nahi hoti. Y ka consent invalid."
+      },
+      {
+        "question": "Principle: Agreement without consideration is void. Facts: A promises to give B ₹10,000 as a gift. What is the status of this agreement?",
+        "options": [
+          "Valid",
+          "Void",
+          "Illegal",
+          "Voidable"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "Contract = give & take hona chahiye. Yahan kuch return nahi mil raha. Isliye agreement valid nahi."
+      },
+      {
+        "question": "Principle: Negligence is failure to take reasonable care. Facts: A drives rashly and injures a pedestrian. Is A liable?",
+        "options": [
+          "Not liable",
+          "Liable for negligence",
+          "No offence",
+          "Only civil case"
+        ],
+        "correctAnswer": "Liable for negligence",
+        "explanation": "Driver ko dhyan se chalana chahiye tha. Rash driving = care nahi li. Injury hui → negligence."
+      },
+      {
+        "question": "Principle: Assault is creating fear of harm. Facts: X raises a stick to hit Y but does not hit. What offence has X committed?",
+        "options": [
+          "No offence",
+          "Assault",
+          "Battery",
+          "Theft"
+        ],
+        "correctAnswer": "Assault",
+        "explanation": "Maarna zaroori nahi hai. Sirf darr create karna bhi assault hai. Stick uthaya → Y dar gaya → assault."
+      },
+      {
+        "question": "Principle: A person is liable for negligence if he fails to act as a reasonable person. Facts: A leaves a pit open on the road without warning signs. B falls into it and gets injured. Is A liable?",
+        "options": [
+          "A is not liable",
+          "A is liable for negligence",
+          "B is responsible",
+          "No offence"
+        ],
+        "correctAnswer": "A is liable for negligence",
+        "explanation": "A ko reasonable care lena chahiye tha (warning sign lagana). Usne nahi lagaya → dusre ko injury hui → negligence ban gaya."
+      },
+      {
+        "question": "Principle: Consent is valid only when given freely. Facts: X threatens Y to sell his house, and Y agrees out of fear. What is the nature of this contract?",
+        "options": [
+          "Valid contract",
+          "Void contract",
+          "Voidable contract",
+          "Illegal contract"
+        ],
+        "correctAnswer": "Voidable contract",
+        "explanation": "Threat = free consent nahi hai. Y chahe to contract cancel kar sakta hai, isliye voidable."
+      },
+      {
+        "question": "Principle: A person is guilty of battery if he intentionally uses force without consent. Facts: A slaps B during an argument. What offence has A committed?",
+        "options": [
+          "Assault only",
+          "Battery",
+          "No offence",
+          "Defamation"
+        ],
+        "correctAnswer": "Battery",
+        "explanation": "Yahan actual physical contact hua (slap). Assault fear hota hai, battery mein touch/force hota hai. Isliye battery."
+      },
+      {
+        "question": "Principle: A person is not liable for an act done by accident without negligence. Facts: A is driving carefully, but suddenly a child runs in front and gets injured. Is A liable?",
+        "options": [
+          "A is liable",
+          "A is not liable",
+          "A is partially liable",
+          "Criminal offence"
+        ],
+        "correctAnswer": "A is not liable",
+        "explanation": "A careful driving kar raha tha. Accident unavoidable tha. Negligence nahi hai, to liability nahi banti."
+      },
+      {
+        "question": "Principle: A person who instigates another to commit a crime is also liable. Facts: X encourages Y to steal a bike. Y steals it. Who is guilty?",
+        "options": [
+          "Only Y is guilty",
+          "Only X is guilty",
+          "Both X and Y are guilty",
+          "No offence"
+        ],
+        "correctAnswer": "Both X and Y are guilty",
+        "explanation": "Y ne theft kiya, aur X ne usko uksaya (instigate kiya). Dono liable hote hain."
+      },
+      {
+        "question": "Principle: A contract made under mistake of fact is void. Facts: A agrees to buy a horse from B, but the horse was already dead. What is the status of this contract?",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "Dono ko laga horse zinda hai, but wo pehle hi mar chuka tha. Ye mutual mistake hai → contract void."
+      },
+      {
+        "question": "Principle: Defamation requires a false statement communicated to others. Facts: A tells B privately that C is a thief, but no one else hears it. Is this defamation?",
+        "options": [
+          "Defamation",
+          "No defamation",
+          "Assault",
+          "Battery"
+        ],
+        "correctAnswer": "No defamation",
+        "explanation": "Defamation tab hota hai jab third person tak baat pahunchti hai. Yahan sirf B ko bola, public tak nahi gaya, to defamation nahi."
+      },
+      {
+        "question": "Principle: Trespass means entering someone’s property without permission. Facts: A enters B’s land without permission to take a shortcut. What offence has A committed?",
+        "options": [
+          "No offence",
+          "Trespass",
+          "Theft",
+          "Negligence"
+        ],
+        "correctAnswer": "Trespass",
+        "explanation": "Permission ke bina kisi ki property mein ghusna = trespass. Chahe intention shortcut ka ho, phir bhi offence hai."
+      },
+      {
+        "question": "Principle: A person is liable for misrepresentation if he makes a false statement believing it to be true. Facts: A sells a car to B saying it is new, but A genuinely believed it was new. What is A liable for?",
+        "options": [
+          "Fraud",
+          "Misrepresentation",
+          "No issue",
+          "Theft"
+        ],
+        "correctAnswer": "Misrepresentation",
+        "explanation": "A ne jhoot bola, but usko laga wo sach hai. Ye fraud nahi, misrepresentation hai."
+      },
+      {
+        "question": "Principle: A person cannot transfer a better title than he himself has. Facts: A steals a watch and sells it to B. B buys it in good faith. Who remains the owner of the watch?",
+        "options": [
+          "B becomes owner",
+          "A remains owner",
+          "Original owner remains owner",
+          "Both A and B owners"
+        ],
+        "correctAnswer": "Original owner remains owner",
+        "explanation": "A chor hai, uske paas valid ownership hi nahi thi. Wo B ko ownership transfer nahi kar sakta. Isliye original owner hi owner rahega."
+      }
+    ],
+    "name": "Admin",
+    "score": 0
+  },
+  "33e016bb-8040-4a0c-a95e-d8ec05b16c53": {
+    "id": "33e016bb-8040-4a0c-a95e-d8ec05b16c53",
+    "filename": "PU LAW (Day-2).pdf",
+    "createdAt": "4/24/2026",
+    "questions": [
+      {
+        "question": "Who continued as the Prime Minister of India after forming the government in 2024 and is serving in 2025–26?",
+        "options": [
+          "Rahul Gandhi",
+          "Narendra Modi",
+          "Amit Shah",
+          "Rajnath Singh"
+        ],
+        "correctAnswer": "Narendra Modi",
+        "explanation": "Narendra Modi continued as the Prime Minister of India after forming the government in 2024 and is serving in 2025-26."
+      },
+      {
+        "question": "Who is serving as the Chief Justice of India in 2025–26?",
+        "options": [
+          "D.Y. Chandrachud",
+          "Sanjiv Khanna",
+          "U.U. Lalit",
+          "N.V. Ramana"
+        ],
+        "correctAnswer": "Sanjiv Khanna",
+        "explanation": "Sanjiv Khanna is serving as the Chief Justice of India in 2025–26 according to the text."
+      },
+      {
+        "question": "Which country is set to host the next BRICS Summit involving India in 2025?",
+        "options": [
+          "India",
+          "Russia",
+          "Brazil",
+          "China"
+        ],
+        "correctAnswer": "Brazil",
+        "explanation": "Brazil is set to host the next BRICS Summit involving India in 2025."
+      },
+      {
+        "question": "India recently focused on which mission to boost semiconductor manufacturing in 2025–26?",
+        "options": [
+          "Digital India 2.0",
+          "India Semiconductor Mission",
+          "Startup India Tech",
+          "Chip India Mission"
+        ],
+        "correctAnswer": "India Semiconductor Mission",
+        "explanation": "India focused on the India Semiconductor Mission to boost semiconductor manufacturing in 2025–26."
+      },
+      {
+        "question": "Which Indian state implemented the Uniform Civil Code (UCC) in 2025?",
+        "options": [
+          "Gujarat",
+          "Uttar Pradesh",
+          "Uttarakhand",
+          "Assam"
+        ],
+        "correctAnswer": "Uttarakhand",
+        "explanation": "Uttarakhand implemented the Uniform Civil Code (UCC) in 2025."
+      },
+      {
+        "question": "India recently expanded which digital payment system globally in 2025–26?",
+        "options": [
+          "Paytm",
+          "UPI",
+          "BHIM",
+          "RuPay Wallet"
+        ],
+        "correctAnswer": "UPI",
+        "explanation": "India expanded the UPI digital payment system globally in 2025–26."
+      },
+      {
+        "question": "Which country partnered with India in 2025 for major defense and technology collaborations?",
+        "options": [
+          "China",
+          "USA",
+          "Pakistan",
+          "Iran"
+        ],
+        "correctAnswer": "USA",
+        "explanation": "The USA partnered with India in 2025 for major defense and technology collaborations."
+      },
+      {
+        "question": "Which ministry launched new AI initiatives in India in 2025?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Electronics & IT",
+          "Ministry of Defence",
+          "Ministry of Agriculture"
+        ],
+        "correctAnswer": "Ministry of Electronics & IT",
+        "explanation": "The Ministry of Electronics & IT launched new AI initiatives in India in 2025."
+      },
+      {
+        "question": "India is focusing on green energy expansion through which major sector in 2025–26?",
+        "options": [
+          "Coal",
+          "Solar Energy",
+          "Nuclear only",
+          "Diesel"
+        ],
+        "correctAnswer": "Solar Energy",
+        "explanation": "India is focusing on green energy expansion through the Solar Energy sector in 2025–26."
+      },
+      {
+        "question": "Which major infrastructure focus is being expanded in India under government plans in 2025–26?",
+        "options": [
+          "Bullet trains & highways",
+          "Only airports",
+          "Only railways",
+          "Only ports"
+        ],
+        "correctAnswer": "Bullet trains & highways",
+        "explanation": "Bullet trains & highways are a major infrastructure focus being expanded in India under government plans in 2025–26."
+      },
+      {
+        "question": "Which country recently became one of the key partners with India for semiconductor investments in 2025?",
+        "options": [
+          "Japan",
+          "USA",
+          "South Korea",
+          "Germany"
+        ],
+        "correctAnswer": "Japan",
+        "explanation": "Japan became one of the key partners with India for semiconductor investments in 2025."
+      },
+      {
+        "question": "India recently launched initiatives to promote Artificial Intelligence under which mission (2025)?",
+        "options": [
+          "Digital India AI",
+          "IndiaAI Mission",
+          "Smart Tech India",
+          "AI Bharat Scheme"
+        ],
+        "correctAnswer": "IndiaAI Mission",
+        "explanation": "India launched initiatives to promote Artificial Intelligence under the IndiaAI Mission in 2025."
+      },
+      {
+        "question": "Which Indian city is being developed as a major semiconductor hub (recent focus)?",
+        "options": [
+          "Mumbai",
+          "Bengaluru",
+          "Dholera (Gujarat)",
+          "Chennai"
+        ],
+        "correctAnswer": "Dholera (Gujarat)",
+        "explanation": "Dholera (Gujarat) is being developed as a major semiconductor hub."
+      },
+      {
+        "question": "India recently focused on increasing exports in which sector through policy push in 2025?",
+        "options": [
+          "Agriculture only",
+          "Electronics & Manufacturing",
+          "Mining",
+          "Textiles only"
+        ],
+        "correctAnswer": "Electronics & Manufacturing",
+        "explanation": "India focused on increasing exports in the Electronics & Manufacturing sector through policy push in 2025."
+      },
+      {
+        "question": "Which Indian payment system is being integrated with other countries for cross-border payments (2025)?",
+        "options": [
+          "NEFT",
+          "RTGS",
+          "UPI",
+          "IMPS"
+        ],
+        "correctAnswer": "UPI",
+        "explanation": "The UPI payment system is being integrated with other countries for cross-border payments in 2025."
+      },
+      {
+        "question": "Which organization is responsible for conducting India’s space missions like recent solar and satellite projects?",
+        "options": [
+          "DRDO",
+          "ISRO",
+          "HAL",
+          "BARC"
+        ],
+        "correctAnswer": "ISRO",
+        "explanation": "ISRO is responsible for conducting India’s space missions like recent solar and satellite projects."
+      },
+      {
+        "question": "India recently emphasized which transport development in its infrastructure expansion (2025)?",
+        "options": [
+          "Only railways",
+          "Only waterways",
+          "Multimodal transport systems",
+          "Only roads"
+        ],
+        "correctAnswer": "Multimodal transport systems",
+        "explanation": "India emphasized multimodal transport systems in its infrastructure expansion in 2025."
+      },
+      {
+        "question": "Which sector is seeing major startup growth supported by government initiatives in 2025?",
+        "options": [
+          "Agriculture only",
+          "Fintech & AI",
+          "Mining",
+          "Tourism only"
+        ],
+        "correctAnswer": "Fintech & AI",
+        "explanation": "The Fintech & AI sector is seeing major startup growth supported by government initiatives in 2025."
+      },
+      {
+        "question": "India is actively participating in which global climate initiative discussions in 2025?",
+        "options": [
+          "COP Climate Summits",
+          "WTO Meetings",
+          "IMF Conferences",
+          "BRICS Trade Talks"
+        ],
+        "correctAnswer": "COP Climate Summits",
+        "explanation": "India is actively participating in COP Climate Summits for global climate initiative discussions in 2025."
+      },
+      {
+        "question": "Which ministry is primarily responsible for digital transformation and tech initiatives in India?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Home Affairs",
+          "Ministry of Electronics & IT",
+          "Ministry of Defence"
+        ],
+        "correctAnswer": "Ministry of Electronics & IT",
+        "explanation": "The Ministry of Electronics & IT is primarily responsible for digital transformation and tech initiatives in India."
+      },
+      {
+        "question": "Punjab government recently announced recruitment drives mainly under which sector?",
+        "options": [
+          "Defence",
+          "Government jobs (Police, Teaching, Admin)",
+          "Private IT companies",
+          "Agriculture only"
+        ],
+        "correctAnswer": "Government jobs (Police, Teaching, Admin)",
+        "explanation": "Punjab government announced recruitment drives mainly under the Government jobs sector, including Police, Teaching, and Administration."
+      },
+      {
+        "question": "Punjab has recently focused on improving which irrigation system for farmers?",
+        "options": [
+          "Canal irrigation modernization",
+          "Drip irrigation only",
+          "Rainwater harvesting only",
+          "Tube wells only"
+        ],
+        "correctAnswer": "Canal irrigation modernization",
+        "explanation": "Punjab has recently focused on improving canal irrigation modernization for farmers."
+      },
+      {
+        "question": "Punjab government recently emphasized which sector to control stubble burning?",
+        "options": [
+          "Industrial sector",
+          "Agricultural machinery & management",
+          "Tourism",
+          "Transport"
+        ],
+        "correctAnswer": "Agricultural machinery & management",
+        "explanation": "Punjab government emphasized Agricultural machinery & management to control stubble burning."
+      },
+      {
+        "question": "Which initiative is being promoted in Punjab to digitize land records?",
+        "options": [
+          "Digital Punjab Land Scheme",
+          "e-Land Portal",
+          "Punjab Land Records Modernization Program",
+          "Bhulekh Punjab"
+        ],
+        "correctAnswer": "Punjab Land Records Modernization Program",
+        "explanation": "The Punjab Land Records Modernization Program is being promoted to digitize land records in Punjab."
+      },
+      {
+        "question": "Punjab is promoting which type of farming to increase farmers’ income recently?",
+        "options": [
+          "Traditional farming",
+          "Organic farming",
+          "Only wheat farming",
+          "Hydroponics only"
+        ],
+        "correctAnswer": "Organic farming",
+        "explanation": "Punjab is promoting organic farming to increase farmers’ income recently."
+      },
+      {
+        "question": "Punjab government has taken steps to improve which sector through new skill development programs?",
+        "options": [
+          "Tourism",
+          "Youth employment & skills",
+          "Defence",
+          "Banking"
+        ],
+        "correctAnswer": "Youth employment & skills",
+        "explanation": "Punjab government has taken steps to improve Youth employment & skills through new skill development programs."
+      },
+      {
+        "question": "Punjab is focusing on which initiative to boost startups recently?",
+        "options": [
+          "Startup Punjab Policy",
+          "Digital Startup Scheme",
+          "Punjab Innovation Mission",
+          "Tech Punjab Program"
+        ],
+        "correctAnswer": "Startup Punjab Policy",
+        "explanation": "Punjab is focusing on the Startup Punjab Policy to boost startups recently."
+      },
+      {
+        "question": "Which issue has Punjab government been actively addressing through awareness campaigns recently?",
+        "options": [
+          "Traffic rules",
+          "Drug abuse",
+          "Water transport",
+          "Banking fraud"
+        ],
+        "correctAnswer": "Drug abuse",
+        "explanation": "Punjab government has been actively addressing drug abuse through awareness campaigns recently."
+      },
+      {
+        "question": "Punjab government is promoting which sector for export growth recently?",
+        "options": [
+          "Electronics",
+          "Agriculture & food processing",
+          "Mining",
+          "Defence"
+        ],
+        "correctAnswer": "Agriculture & food processing",
+        "explanation": "Punjab government is promoting the Agriculture & food processing sector for export growth recently."
+      },
+      {
+        "question": "Punjab has recently taken initiatives to improve which public service delivery system?",
+        "options": [
+          "Manual government offices",
+          "Digital governance services",
+          "Postal services",
+          "Railway services"
+        ],
+        "correctAnswer": "Digital governance services",
+        "explanation": "Punjab has recently taken initiatives to improve digital governance services public service delivery system."
+      },
+      {
+        "question": "Punjab government recently collaborated with which sector to boost EV (electric vehicle) adoption?",
+        "options": [
+          "Textile sector",
+          "Transport & Industry sector",
+          "Agriculture sector",
+          "Banking sector"
+        ],
+        "correctAnswer": "Transport & Industry sector",
+        "explanation": "Punjab government collaborated with the Transport & Industry sector to boost EV (electric vehicle) adoption."
+      },
+      {
+        "question": "Which initiative has Punjab promoted to strengthen sports infrastructure recently?",
+        "options": [
+          "Khelo Punjab Mission",
+          "Punjab Sports Policy",
+          "Youth Sports Scheme",
+          "Fit Punjab Program"
+        ],
+        "correctAnswer": "Punjab Sports Policy",
+        "explanation": "Punjab promoted the Punjab Sports Policy to strengthen sports infrastructure recently."
+      },
+      {
+        "question": "Punjab government has recently focused on improving which healthcare facility?",
+        "options": [
+          "Private hospitals only",
+          "Government hospitals & clinics",
+          "Only rural health camps",
+          "Only urban health centers"
+        ],
+        "correctAnswer": "Government hospitals & clinics",
+        "explanation": "Punjab government has recently focused on improving government hospitals & clinics healthcare facility."
+      },
+      {
+        "question": "Which sector in Punjab is being modernized through digital tools and technology?",
+        "options": [
+          "Agriculture",
+          "Mining",
+          "Tourism",
+          "Aviation"
+        ],
+        "correctAnswer": "Agriculture",
+        "explanation": "The Agriculture sector in Punjab is being modernized through digital tools and technology."
+      },
+      {
+        "question": "Punjab has taken initiatives to improve which environmental issue recently?",
+        "options": [
+          "Marine pollution",
+          "Air pollution & stubble burning",
+          "Desertification",
+          "Oil spills"
+        ],
+        "correctAnswer": "Air pollution & stubble burning",
+        "explanation": "Punjab has taken initiatives to improve air pollution & stubble burning environmental issue."
+      },
+      {
+        "question": "Punjab government is encouraging which industry to generate employment?",
+        "options": [
+          "Heavy mining",
+          "MSME sector",
+          "Oil refining",
+          "Shipbuilding"
+        ],
+        "correctAnswer": "MSME sector",
+        "explanation": "Punjab government is encouraging the MSME sector to generate employment."
+      },
+      {
+        "question": "Punjab has been promoting which tourism segment recently?",
+        "options": [
+          "Beach tourism",
+          "Religious tourism",
+          "Desert tourism",
+          "Snow tourism"
+        ],
+        "correctAnswer": "Religious tourism",
+        "explanation": "Punjab has been promoting religious tourism recently."
+      },
+      {
+        "question": "Which step has Punjab taken to improve law enforcement efficiency?",
+        "options": [
+          "Reducing police force",
+          "Digital policing & surveillance systems",
+          "Removing FIR system",
+          "Privatizing police"
+        ],
+        "correctAnswer": "Digital policing & surveillance systems",
+        "explanation": "Punjab has taken steps like digital policing & surveillance systems to improve law enforcement efficiency."
+      },
+      {
+        "question": "Punjab government has emphasized which sector to improve rural economy?",
+        "options": [
+          "IT sector",
+          "Agriculture & allied activities",
+          "Mining",
+          "Aviation"
+        ],
+        "correctAnswer": "Agriculture & allied activities",
+        "explanation": "Punjab government has emphasized the Agriculture & allied activities sector to improve rural economy."
+      },
+      {
+        "question": "Punjab is focusing on which initiative to improve education quality in government schools?",
+        "options": [
+          "Digital books only",
+          "Teacher training & infrastructure improvement",
+          "Removing exams",
+          "Private school expansion"
+        ],
+        "correctAnswer": "Teacher training & infrastructure improvement",
+        "explanation": "Punjab is focusing on teacher training & infrastructure improvement to improve education quality in government schools."
+      }
+    ],
+    "name": "Admin",
+    "score": 0
+  },
+  "b07300b7-8ccf-4aea-92c5-694764bcbc03": {
+    "id": "b07300b7-8ccf-4aea-92c5-694764bcbc03",
+    "filename": "PU LAW Current Affairs (Day-1).pdf",
+    "createdAt": "4/24/2026",
+    "questions": [
+      {
+        "question": "Newcastle Disease, that was recently seen in news, is caused by which agent?",
+        "options": [
+          "Virus",
+          "Bacteria",
+          "Fungus",
+          "Protozoa"
+        ],
+        "correctAnswer": "Virus",
+        "explanation": "Newcastle Disease is a highly contagious disease of birds caused by a virus."
+      },
+      {
+        "question": "The SAMPANN platform is a flagship initiative of which organization?",
+        "options": [
+          "Ministry of Finance",
+          "Department of Telecommunications",
+          "Ministry of Labour and Employment",
+          "Department of Pension and Pensioners’ Welfare"
+        ],
+        "correctAnswer": "Department of Telecommunications",
+        "explanation": "SAMPANN is an initiative of the Department of Telecommunications."
+      },
+      {
+        "question": "Which state recorded the highest rooftop solar installations in March 2026 under the PM Surya Ghar: Muft Bijli Yojana?",
+        "options": [
+          "Maharashtra",
+          "Gujarat",
+          "Rajasthan",
+          "Uttar Pradesh"
+        ],
+        "correctAnswer": "Uttar Pradesh",
+        "explanation": "Uttar Pradesh led in rooftop solar installations under the PM Surya Ghar: Muft Bijli Yojana in March 2026."
+      },
+      {
+        "question": "Capacity Building Commission (CBC) is associated with which programme?",
+        "options": [
+          "Digital India",
+          "Skill India",
+          "Mission Karmayogi",
+          "Startup India"
+        ],
+        "correctAnswer": "Mission Karmayogi",
+        "explanation": "The Capacity Building Commission (CBC) is integral to the Mission Karmayogi program."
+      },
+      {
+        "question": "Project Chetak operates primarily in which region of India?",
+        "options": [
+          "Rajasthan, Punjab, Gujarat",
+          "Karnataka, Kerala, Tamil Nadu",
+          "Jammu and Kashmir, Ladakh",
+          "Arunachal Pradesh, Sikkim, Assam"
+        ],
+        "correctAnswer": "Rajasthan, Punjab, Gujarat",
+        "explanation": "Project Chetak's primary operational region covers Rajasthan, Punjab, and Gujarat."
+      },
+      {
+        "question": "Barnawapara Wildlife Sanctuary is located in which state?",
+        "options": [
+          "Chhattisgarh",
+          "Odisha",
+          "Bihar",
+          "Jharkhand"
+        ],
+        "correctAnswer": "Chhattisgarh",
+        "explanation": "Barnawapara Wildlife Sanctuary is situated in the state of Chhattisgarh."
+      },
+      {
+        "question": "Recently, a rare Indian giant flying squirrel was spotted in which tiger reserve of Chhattisgarh?",
+        "options": [
+          "Guru Ghasidas-Tamor Pingla Tiger Reserve",
+          "Achanakmar Tiger Reserve",
+          "Indravati Tiger Reserve",
+          "Udanti-Sitanadi Tiger Reserve"
+        ],
+        "correctAnswer": "Udanti-Sitanadi Tiger Reserve",
+        "explanation": "The rare Indian giant flying squirrel was spotted in Udanti-Sitanadi Tiger Reserve."
+      },
+      {
+        "question": "A Pentagon AI program called Project Maven was launched by which country?",
+        "options": [
+          "United States",
+          "Iran",
+          "India",
+          "Australia"
+        ],
+        "correctAnswer": "United States",
+        "explanation": "Project Maven is an AI program initiated by the Pentagon in the United States."
+      },
+      {
+        "question": "What is IUCN conservation status of Bengal Florican that was recently seen in news?",
+        "options": [
+          "Endangered",
+          "Critically Endangered",
+          "Vulnerable",
+          "Least Concern"
+        ],
+        "correctAnswer": "Critically Endangered",
+        "explanation": "The Bengal Florican is classified as Critically Endangered by the IUCN."
+      },
+      {
+        "question": "Prevention of Blindness Week in India is observed annually during which period?",
+        "options": [
+          "March 1 – March 7",
+          "March 25 – March 31",
+          "April 1 – April 7",
+          "April 7 – April 14"
+        ],
+        "correctAnswer": "April 1 – April 7",
+        "explanation": "Prevention of Blindness Week is observed annually in India from April 1 to April 7."
+      },
+      {
+        "question": "Madras Hedgehog, that was recently seen in news, is primarily found in which region of India?",
+        "options": [
+          "Northern Plains and Himalayas",
+          "Peninsular India",
+          "Western Ghats only",
+          "None of the Above"
+        ],
+        "correctAnswer": "Peninsular India",
+        "explanation": "The Madras Hedgehog is predominantly found in the Peninsular India region."
+      },
+      {
+        "question": "Who has become India’s first openly queer Member of Parliament (MP)?",
+        "options": [
+          "Menaka Guruswamy",
+          "Indu Goswami",
+          "Kiran Chaudhary",
+          "Medha Kulkarni"
+        ],
+        "correctAnswer": "Menaka Guruswamy",
+        "explanation": "Menaka Guruswamy made history as India's first openly queer Member of Parliament."
+      },
+      {
+        "question": "The Production Linked Incentive Scheme for Food Processing Industry (PLISFPI) is implemented by which ministry?",
+        "options": [
+          "Ministry of Agriculture & Farmers Welfare",
+          "Ministry of Commerce & Industry",
+          "Ministry of Food Processing Industries",
+          "Ministry of Rural Development"
+        ],
+        "correctAnswer": "Ministry of Food Processing Industries",
+        "explanation": "PLISFPI falls under the purview of the Ministry of Food Processing Industries."
+      },
+      {
+        "question": "Umred Pauni Karhandla Wildlife Sanctuary is located in which state?",
+        "options": [
+          "Maharashtra",
+          "Karnataka",
+          "Kerala",
+          "Tamil Nadu"
+        ],
+        "correctAnswer": "Maharashtra",
+        "explanation": "Umred Pauni Karhandla Wildlife Sanctuary is located in Maharashtra."
+      },
+      {
+        "question": "Which state government has launched the “Majha Gaon, Arogyasampann Gaon” initiative?",
+        "options": [
+          "Odisha",
+          "Uttar Pradesh",
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "correctAnswer": "Maharashtra",
+        "explanation": "The 'Majha Gaon, Arogyasampann Gaon' initiative was launched by the Maharashtra government."
+      },
+      {
+        "question": "Pradhan Mantri Mudra Yojana was launched under which ministry?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of MSME",
+          "Ministry of Commerce",
+          "Ministry of Law and Justice"
+        ],
+        "correctAnswer": "Ministry of Finance",
+        "explanation": "Pradhan Mantri Mudra Yojana is an initiative under the Ministry of Finance."
+      },
+      {
+        "question": "Which state’s High Court released a comprehensive AI policy in April 2026 that strictly bans the use of AI in drafting judgments?",
+        "options": [
+          "Kerala",
+          "Gujarat",
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "correctAnswer": "Gujarat",
+        "explanation": "Gujarat High Court's AI policy specifically prohibits the use of AI in drafting judgments."
+      },
+      {
+        "question": "CRPF Valour Day (Shaurya Diwas) is observed on which day every year?",
+        "options": [
+          "April 8",
+          "April 9",
+          "April 10",
+          "April 11"
+        ],
+        "correctAnswer": "April 9",
+        "explanation": "CRPF Valour Day is celebrated annually on April 9th."
+      },
+      {
+        "question": "Where was Yoga Mahotsav–2026 held?",
+        "options": [
+          "Maharashtra",
+          "Gujarat",
+          "Uttar Pradesh",
+          "Bihar"
+        ],
+        "correctAnswer": "Maharashtra",
+        "explanation": "Yoga Mahotsav–2026 took place in Maharashtra."
+      },
+      {
+        "question": "Food Safety and Standards Authority of India operates under which ministry?",
+        "options": [
+          "Ministry of Food Processing Industries",
+          "Ministry of Agriculture and Farmers Welfare",
+          "Ministry of Health and Family Welfare",
+          "Ministry of Commerce and Industry"
+        ],
+        "correctAnswer": "Ministry of Health and Family Welfare",
+        "explanation": "FSSAI functions under the administrative control of the Ministry of Health and Family Welfare."
+      },
+      {
+        "question": "Who is the current Chief Minister of Punjab?",
+        "options": [
+          "Amarinder Singh",
+          "Bhagwant Maan",
+          "Charanjit Singh Channi",
+          "Sukhbir Singh Badal"
+        ],
+        "correctAnswer": "Bhagwant Maan",
+        "explanation": "Bhagwant Maan is the current Chief Minister of Punjab."
+      },
+      {
+        "question": "The “School of Eminence” initiative in Punjab is related to which sector?",
+        "options": [
+          "Health",
+          "Education",
+          "Agriculture",
+          "Tourism"
+        ],
+        "correctAnswer": "Education",
+        "explanation": "The 'School of Eminence' initiative focuses on improving the education sector in Punjab."
+      },
+      {
+        "question": "Which of the following cities in Punjab are part of the Smart Cities Mission?",
+        "options": [
+          "Amritsar",
+          "Ludhiana",
+          "Jalandhar",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "explanation": "Amritsar, Ludhiana, and Jalandhar are all included in the Smart Cities Mission in Punjab."
+      },
+      {
+        "question": "The “Basera Scheme” in Punjab is associated with:",
+        "options": [
+          "Agriculture subsidies",
+          "Housing for slum dwellers",
+          "Women safety",
+          "Transport services"
+        ],
+        "correctAnswer": "Housing for slum dwellers",
+        "explanation": "The 'Basera Scheme' aims to provide housing solutions for slum dwellers in Punjab."
+      },
+      {
+        "question": "Where is the headquarters of Punjab Police located?",
+        "options": [
+          "Amritsar",
+          "Chandigarh",
+          "Patiala",
+          "Bathinda"
+        ],
+        "correctAnswer": "Chandigarh",
+        "explanation": "The headquarters of Punjab Police is situated in Chandigarh."
+      },
+      {
+        "question": "Punjab launched which portal to provide citizen-centric services online?",
+        "options": [
+          "e-Punjab Portal",
+          "Sewa Portal",
+          "Digi Punjab Portal",
+          "Punjab One Portal"
+        ],
+        "correctAnswer": "Sewa Portal",
+        "explanation": "The Sewa Portal was launched by Punjab to offer online citizen services."
+      },
+      {
+        "question": "Which river is known as the lifeline of Punjab?",
+        "options": [
+          "Ganga",
+          "Yamuna",
+          "Sutlej",
+          "Godavari"
+        ],
+        "correctAnswer": "Sutlej",
+        "explanation": "The Sutlej River is considered the lifeline of Punjab due to its vital role in the region."
+      },
+      {
+        "question": "Punjab’s “Mission Rozgar” is related to:",
+        "options": [
+          "Agriculture development",
+          "Employment generation",
+          "Tourism promotion",
+          "Industrial exports"
+        ],
+        "correctAnswer": "Employment generation",
+        "explanation": "Mission Rozgar is an initiative by Punjab government focused on creating employment opportunities."
+      },
+      {
+        "question": "Which city is known as the “Manchester of India” and is located in Punjab?",
+        "options": [
+          "Amritsar",
+          "Ludhiana",
+          "Jalandhar",
+          "Patiala"
+        ],
+        "correctAnswer": "Ludhiana",
+        "explanation": "Ludhiana is often referred to as the 'Manchester of India' for its textile industry."
+      },
+      {
+        "question": "Which international airport is located in Punjab?",
+        "options": [
+          "Indira Gandhi International Airport",
+          "Sri Guru Ram Dass Jee International Airport",
+          "Chhatrapati Shivaji Airport",
+          "Netaji Subhas Chandra Bose Airport"
+        ],
+        "correctAnswer": "Sri Guru Ram Dass Jee International Airport",
+        "explanation": "Sri Guru Ram Dass Jee International Airport is a major international airport serving Punjab."
+      },
+      {
+        "question": "Who was recently appointed as the Vice-Chancellor of Panjab University (PU)?",
+        "options": [
+          "Renu Vig",
+          "Raj Kumar",
+          "Karamjeet Singh",
+          "Satbir Singh"
+        ],
+        "correctAnswer": "Renu Vig",
+        "explanation": "Renu Vig was recently appointed as the Vice-Chancellor of Panjab University."
+      },
+      {
+        "question": "Punjab government recently provided how many units of free electricity to households?",
+        "options": [
+          "100 units",
+          "200 units",
+          "300 units",
+          "500 units"
+        ],
+        "correctAnswer": "300 units",
+        "explanation": "The Punjab government provided 300 units of free electricity to households."
+      },
+      {
+        "question": "Punjab launched which anti-corruption helpline/app for citizens?",
+        "options": [
+          "Punjab Vigil App",
+          "Anti-Corruption Action Line",
+          "Bhagwant Mann Helpline",
+          "Jan Suraksha App"
+        ],
+        "correctAnswer": "Anti-Corruption Action Line",
+        "explanation": "The Anti-Corruption Action Line was launched in Punjab for citizens to report corruption."
+      },
+      {
+        "question": "Which drug awareness campaign has been actively promoted by the Punjab government recently?",
+        "options": [
+          "Nasha Mukt Bharat",
+          "War Against Drugs",
+          "Say No to Drugs Punjab",
+          "Drug-Free Punjab Mission"
+        ],
+        "correctAnswer": "War Against Drugs",
+        "explanation": "The 'War Against Drugs' campaign has been actively promoted by the Punjab government."
+      },
+      {
+        "question": "Punjab Police recently strengthened which system to improve law enforcement tracking?",
+        "options": [
+          "e-FIR System",
+          "CCTNS (Crime and Criminal Tracking Network System)",
+          "Digital FIR App",
+          "Smart Police Portal"
+        ],
+        "correctAnswer": "CCTNS (Crime and Criminal Tracking Network System)",
+        "explanation": "Punjab Police strengthened the CCTNS to enhance law enforcement tracking."
+      },
+      {
+        "question": "Which sector is Punjab government focusing on through new industrial policies?",
+        "options": [
+          "IT and Startups",
+          "Textile only",
+          "Mining",
+          "Aviation"
+        ],
+        "correctAnswer": "IT and Startups",
+        "explanation": "New industrial policies in Punjab are focusing on the IT and Startups sector."
+      },
+      {
+        "question": "Punjab government recently emphasized crop diversification to reduce dependency on which crop?",
+        "options": [
+          "Wheat",
+          "Cotton",
+          "Rice (Paddy)",
+          "Sugarcane"
+        ],
+        "correctAnswer": "Rice (Paddy)",
+        "explanation": "Crop diversification efforts in Punjab aim to reduce reliance on Rice (Paddy)."
+      },
+      {
+        "question": "Which initiative was launched in Punjab to improve government school infrastructure?",
+        "options": [
+          "Smart School Program",
+          "School of Eminence",
+          "Digital Punjab Schools",
+          "Future School Mission"
+        ],
+        "correctAnswer": "School of Eminence",
+        "explanation": "The 'School of Eminence' initiative targets improvement in government school infrastructure."
+      },
+      {
+        "question": "Punjab has been actively promoting which renewable energy source recently?",
+        "options": [
+          "Wind Energy",
+          "Solar Energy",
+          "Hydro Energy",
+          "Nuclear Energy"
+        ],
+        "correctAnswer": "Solar Energy",
+        "explanation": "Punjab has been actively promoting solar energy as a renewable source."
+      },
+      {
+        "question": "Punjab government recently signed MoUs to boost which sector?",
+        "options": [
+          "Tourism",
+          "Agriculture exports",
+          "Industrial investment",
+          "Healthcare"
+        ],
+        "correctAnswer": "Industrial investment",
+        "explanation": "MoUs were signed by the Punjab government to boost industrial investment."
+      }
+    ],
+    "name": "Admin",
+    "score": 0
+  },
+  "df8e9557-df5c-4c52-a2da-4b2911e4b96c": {
+    "id": "df8e9557-df5c-4c52-a2da-4b2911e4b96c",
+    "filename": "LEGAL APTITUDE.pdf + PU LAW (Day-2).pdf + PU LAW Current Affairs (Day-1).pdf",
+    "createdAt": "4/24/2026",
+    "questions": [
+      {
+        "question": "Principle: A person is guilty of theft if he dishonestly takes movable property without consent. Facts: Rohan picks up a pen thinking it is his, but it belongs to the shop.",
+        "options": [
+          "Rohan is guilty",
+          "Rohan is not guilty",
+          "Rohan must pay fine",
+          "Rohan is partially guilty"
+        ],
+        "correctAnswer": "Rohan is not guilty",
+        "explanation": "Dishonest intention is important for theft. Rohan thought the pen was his, so he had no intention to steal, therefore not guilty."
+      },
+      {
+        "question": "Principle: A contract without free consent is voidable. Facts: A forces B to sign a contract at gunpoint.",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Voidable",
+        "explanation": "Consent obtained at gunpoint is not free consent, making the contract voidable at B's option."
+      },
+      {
+        "question": "Principle: Ignorance of law is not an excuse. Facts: Aman breaks a law saying he didn’t know it existed.",
+        "options": [
+          "Not liable",
+          "Liable",
+          "Depends",
+          "Excused"
+        ],
+        "correctAnswer": "Liable",
+        "explanation": "The principle states that not knowing a law is not a valid excuse, so Aman is liable."
+      },
+      {
+        "question": "Principle: A person has the right of private defense. Facts: X hits Y to protect himself from Y’s attack.",
+        "options": [
+          "Guilty",
+          "Not guilty",
+          "Partially guilty",
+          "Civil offence"
+        ],
+        "correctAnswer": "Not guilty",
+        "explanation": "Self-defense is allowed. X acted to protect himself, thus not committing a crime."
+      },
+      {
+        "question": "Principle: A minor cannot enter into a valid contract. Facts: A 16-year-old signs a loan agreement.",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "A minor (under 18) cannot enter into a legal contract, making any such agreement invalid from the start."
+      },
+      {
+        "question": "Principle: Defamation means harming someone’s reputation. Facts: A publishes false statements about B in a newspaper.",
+        "options": [
+          "No offence",
+          "Defamation",
+          "Assault",
+          "Theft"
+        ],
+        "correctAnswer": "Defamation",
+        "explanation": "Publishing false statements that damage reputation is a clear case of defamation."
+      },
+      {
+        "question": "Principle: Consent obtained by fraud is not valid. Facts: X lies and sells a product to Y.",
+        "options": [
+          "Valid consent",
+          "Invalid consent",
+          "No contract",
+          "Legal sale"
+        ],
+        "correctAnswer": "Invalid consent",
+        "explanation": "Consent obtained through lies constitutes fraud, making the consent invalid."
+      },
+      {
+        "question": "Principle: Agreement without consideration is void. Facts: A promises to give B ₹10,000 as a gift.",
+        "options": [
+          "Valid",
+          "Void",
+          "Illegal",
+          "Voidable"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "For a contract to be valid, there must be a 'give and take' (consideration). A gift lacks consideration, making the agreement void."
+      },
+      {
+        "question": "Principle: Negligence is failure to take reasonable care. Facts: A drives rashly and injures a pedestrian.",
+        "options": [
+          "Not liable",
+          "Liable for negligence",
+          "No offence",
+          "Only civil case"
+        ],
+        "correctAnswer": "Liable for negligence",
+        "explanation": "Rash driving demonstrates a failure to take reasonable care, leading to liability for negligence when injury occurs."
+      },
+      {
+        "question": "Principle: Assault is creating fear of harm. Facts: X raises a stick to hit Y but does not hit.",
+        "options": [
+          "No offence",
+          "Assault",
+          "Battery",
+          "Theft"
+        ],
+        "correctAnswer": "Assault",
+        "explanation": "Assault involves creating a fear of harm, even if no physical contact is made. Raising a stick causes fear."
+      },
+      {
+        "question": "Principle: A person is liable for negligence if he fails to act as a reasonable person. Facts: A leaves a pit open on the road without warning signs. B falls into it and gets injured.",
+        "options": [
+          "A is not liable",
+          "A is liable for negligence",
+          "B is responsible",
+          "No offence"
+        ],
+        "correctAnswer": "A is liable for negligence",
+        "explanation": "A failed to take reasonable care by not putting up a warning sign, leading to B's injury, hence A is liable for negligence."
+      },
+      {
+        "question": "Principle: Consent is valid only when given freely. Facts: X threatens Y to sell his house, and Y agrees out of fear.",
+        "options": [
+          "Valid contract",
+          "Void contract",
+          "Voidable contract",
+          "Illegal contract"
+        ],
+        "correctAnswer": "Voidable contract",
+        "explanation": "Consent given under threat is not free, making the contract voidable at Y's discretion."
+      },
+      {
+        "question": "Principle: A person is guilty of battery if he intentionally uses force without consent. Facts: A slaps B during an argument.",
+        "options": [
+          "Assault only",
+          "Battery",
+          "No offence",
+          "Defamation"
+        ],
+        "correctAnswer": "Battery",
+        "explanation": "Battery involves actual physical contact or use of force without consent, which a slap constitutes."
+      },
+      {
+        "question": "Principle: A person is not liable for an act done by accident without negligence. Facts: A is driving carefully, but suddenly a child runs in front and gets injured.",
+        "options": [
+          "A is liable",
+          "A is not liable",
+          "A is partially liable",
+          "Criminal offence"
+        ],
+        "correctAnswer": "A is not liable",
+        "explanation": "Since A was driving carefully and the accident was unavoidable, there was no negligence, and thus no liability."
+      },
+      {
+        "question": "Principle: A person who instigates another to commit a crime is also liable. Facts: X encourages Y to steal a bike. Y steals it.",
+        "options": [
+          "Only Y is guilty",
+          "Only X is guilty",
+          "Both X and Y are guilty",
+          "No offence"
+        ],
+        "correctAnswer": "Both X and Y are guilty",
+        "explanation": "X instigated Y to commit theft, making both X and Y liable under the given principle."
+      },
+      {
+        "question": "Principle: A contract made under mistake of fact is void. Facts: A agrees to buy a horse from B, but the horse was already dead.",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "This is a mutual mistake of fact regarding the existence of the subject matter, rendering the contract void."
+      },
+      {
+        "question": "Principle: Defamation requires a false statement communicated to others. Facts: A tells B privately that C is a thief, but no one else hears it.",
+        "options": [
+          "Defamation",
+          "No defamation",
+          "Assault",
+          "Battery"
+        ],
+        "correctAnswer": "No defamation",
+        "explanation": "Defamation requires communication to a third person. Since only B heard it, it's not defamation."
+      },
+      {
+        "question": "Principle: Trespass means entering someone’s property without permission. Facts: A enters B’s land without permission to take a shortcut.",
+        "options": [
+          "No offence",
+          "Trespass",
+          "Theft",
+          "Negligence"
+        ],
+        "correctAnswer": "Trespass",
+        "explanation": "Entering someone's property without permission, regardless of intention (like taking a shortcut), constitutes trespass."
+      },
+      {
+        "question": "Principle: A person is liable for misrepresentation if he makes a false statement believing it to be true. Facts: A sells a car to B saying it is new, but A genuinely believed it was new.",
+        "options": [
+          "Fraud",
+          "Misrepresentation",
+          "No issue",
+          "Theft"
+        ],
+        "correctAnswer": "Misrepresentation",
+        "explanation": "Since A genuinely believed the false statement to be true, it is misrepresentation, not fraud (which requires dishonest intent)."
+      },
+      {
+        "question": "Principle: A person cannot transfer a better title than he himself has. Facts: A steals a watch and sells it to B. B buys it in good faith.",
+        "options": [
+          "B becomes owner",
+          "A remains owner",
+          "Original owner remains owner",
+          "Both A and B owners"
+        ],
+        "correctAnswer": "Original owner remains owner",
+        "explanation": "A thief has no valid title to the property and therefore cannot transfer ownership to anyone, even a good-faith buyer. The original owner retains title."
+      },
+      {
+        "question": "Who continued as the Prime Minister of India after forming the government in 2024 and is serving in 2025–26?",
+        "options": [
+          "Rahul Gandhi",
+          "Narendra Modi",
+          "Amit Shah",
+          "Rajnath Singh"
+        ],
+        "correctAnswer": "Narendra Modi",
+        "explanation": "Narendra Modi continued as the Prime Minister of India after forming the government in 2024 and is serving in 2025–26."
+      },
+      {
+        "question": "Who is serving as the Chief Justice of India in 2025–26?",
+        "options": [
+          "D.Y. Chandrachud",
+          "Sanjiv Khanna",
+          "U.U. Lalit",
+          "N.V. Ramana"
+        ],
+        "correctAnswer": "Sanjiv Khanna",
+        "explanation": "Sanjiv Khanna is serving as the Chief Justice of India in 2025–26."
+      },
+      {
+        "question": "Which country is set to host the next BRICS Summit involving India in 2025?",
+        "options": [
+          "India",
+          "Russia",
+          "Brazil",
+          "China"
+        ],
+        "correctAnswer": "Brazil",
+        "explanation": "Brazil is set to host the next BRICS Summit involving India in 2025."
+      },
+      {
+        "question": "India recently focused on which mission to boost semiconductor manufacturing in 2025–26?",
+        "options": [
+          "Digital India 2.0",
+          "India Semiconductor Mission",
+          "Startup India Tech",
+          "Chip India Mission"
+        ],
+        "correctAnswer": "India Semiconductor Mission",
+        "explanation": "India focused on the India Semiconductor Mission to boost semiconductor manufacturing in 2025–26."
+      },
+      {
+        "question": "Which Indian state implemented the Uniform Civil Code (UCC) in 2025?",
+        "options": [
+          "Gujarat",
+          "Uttar Pradesh",
+          "Uttarakhand",
+          "Assam"
+        ],
+        "correctAnswer": "Uttarakhand",
+        "explanation": "Uttarakhand implemented the Uniform Civil Code (UCC) in 2025."
+      },
+      {
+        "question": "India recently expanded which digital payment system globally in 2025–26?",
+        "options": [
+          "Paytm",
+          "UPI",
+          "BHIM",
+          "RuPay Wallet"
+        ],
+        "correctAnswer": "UPI",
+        "explanation": "India recently expanded UPI globally in 2025–26."
+      },
+      {
+        "question": "Which country partnered with India in 2025 for major defense and technology collaborations?",
+        "options": [
+          "China",
+          "USA",
+          "Pakistan",
+          "Iran"
+        ],
+        "correctAnswer": "USA",
+        "explanation": "The USA partnered with India in 2025 for major defense and technology collaborations."
+      },
+      {
+        "question": "Which ministry launched new AI initiatives in India in 2025?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Electronics & IT",
+          "Ministry of Defence",
+          "Ministry of Agriculture"
+        ],
+        "correctAnswer": "Ministry of Electronics & IT",
+        "explanation": "The Ministry of Electronics & IT launched new AI initiatives in India in 2025."
+      },
+      {
+        "question": "India is focusing on green energy expansion through which major sector in 2025–26?",
+        "options": [
+          "Coal",
+          "Solar Energy",
+          "Nuclear only",
+          "Diesel"
+        ],
+        "correctAnswer": "Solar Energy",
+        "explanation": "India is focusing on green energy expansion through the Solar Energy sector in 2025–26."
+      },
+      {
+        "question": "Which major infrastructure focus is being expanded in India under government plans in 2025–26?",
+        "options": [
+          "Bullet trains & highways",
+          "Only airports",
+          "Only railways",
+          "Only ports"
+        ],
+        "correctAnswer": "Bullet trains & highways",
+        "explanation": "Bullet trains & highways are being expanded under government infrastructure plans in 2025–26."
+      },
+      {
+        "question": "Which country recently became one of the key partners with India for semiconductor investments in 2025?",
+        "options": [
+          "Japan",
+          "USA",
+          "South Korea",
+          "Germany"
+        ],
+        "correctAnswer": "Japan",
+        "explanation": "Japan recently became a key partner with India for semiconductor investments in 2025."
+      },
+      {
+        "question": "India recently launched initiatives to promote Artificial Intelligence under which mission (2025)?",
+        "options": [
+          "Digital India AI",
+          "IndiaAI Mission",
+          "Smart Tech India",
+          "AI Bharat Scheme"
+        ],
+        "correctAnswer": "IndiaAI Mission",
+        "explanation": "India launched initiatives to promote Artificial Intelligence under the IndiaAI Mission in 2025."
+      },
+      {
+        "question": "Which Indian city is being developed as a major semiconductor hub (recent focus)?",
+        "options": [
+          "Mumbai",
+          "Bengaluru",
+          "Dholera (Gujarat)",
+          "Chennai"
+        ],
+        "correctAnswer": "Dholera (Gujarat)",
+        "explanation": "Dholera (Gujarat) is being developed as a major semiconductor hub."
+      },
+      {
+        "question": "India recently focused on increasing exports in which sector through policy push in 2025?",
+        "options": [
+          "Agriculture only",
+          "Electronics & Manufacturing",
+          "Mining",
+          "Textiles only"
+        ],
+        "correctAnswer": "Electronics & Manufacturing",
+        "explanation": "India focused on increasing exports in the Electronics & Manufacturing sector in 2025."
+      },
+      {
+        "question": "Which Indian payment system is being integrated with other countries for cross-border payments (2025)?",
+        "options": [
+          "NEFT",
+          "RTGS",
+          "UPI",
+          "IMPS"
+        ],
+        "correctAnswer": "UPI",
+        "explanation": "UPI is being integrated with other countries for cross-border payments in 2025."
+      },
+      {
+        "question": "Which organization is responsible for conducting India’s space missions like recent solar and satellite projects?",
+        "options": [
+          "DRDO",
+          "ISRO",
+          "HAL",
+          "BARC"
+        ],
+        "correctAnswer": "ISRO",
+        "explanation": "ISRO is responsible for conducting India’s space missions."
+      },
+      {
+        "question": "India recently emphasized which transport development in its infrastructure expansion (2025)?",
+        "options": [
+          "Only railways",
+          "Only waterways",
+          "Multimodal transport systems",
+          "Only roads"
+        ],
+        "correctAnswer": "Multimodal transport systems",
+        "explanation": "India emphasized multimodal transport systems in its infrastructure expansion in 2025."
+      },
+      {
+        "question": "Which sector is seeing major startup growth supported by government initiatives in 2025?",
+        "options": [
+          "Agriculture only",
+          "Fintech & AI",
+          "Mining",
+          "Tourism only"
+        ],
+        "correctAnswer": "Fintech & AI",
+        "explanation": "Fintech & AI is seeing major startup growth supported by government initiatives in 2025."
+      },
+      {
+        "question": "India is actively participating in which global climate initiative discussions in 2025?",
+        "options": [
+          "COP Climate Summits",
+          "WTO Meetings",
+          "IMF Conferences",
+          "BRICS Trade Talks"
+        ],
+        "correctAnswer": "COP Climate Summits",
+        "explanation": "India is actively participating in COP Climate Summits discussions in 2025."
+      },
+      {
+        "question": "Which ministry is primarily responsible for digital transformation and tech initiatives in India?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Home Affairs",
+          "Ministry of Electronics & IT",
+          "Ministry of Defence"
+        ],
+        "correctAnswer": "Ministry of Electronics & IT",
+        "explanation": "The Ministry of Electronics & IT is primarily responsible for digital transformation and tech initiatives in India."
+      },
+      {
+        "question": "Punjab government recently announced recruitment drives mainly under which sector?",
+        "options": [
+          "Defence",
+          "Government jobs (Police, Teaching, Admin)",
+          "Private IT companies",
+          "Agriculture only"
+        ],
+        "correctAnswer": "Government jobs (Police, Teaching, Admin)",
+        "explanation": "Punjab government announced recruitment drives mainly under government jobs (Police, Teaching, Admin)."
+      },
+      {
+        "question": "Punjab has recently focused on improving which irrigation system for farmers?",
+        "options": [
+          "Canal irrigation modernization",
+          "Drip irrigation only",
+          "Rainwater harvesting only",
+          "Tube wells only"
+        ],
+        "correctAnswer": "Canal irrigation modernization",
+        "explanation": "Punjab has focused on improving canal irrigation modernization for farmers."
+      },
+      {
+        "question": "Punjab government recently emphasized which sector to control stubble burning?",
+        "options": [
+          "Industrial sector",
+          "Agricultural machinery & management",
+          "Tourism",
+          "Transport"
+        ],
+        "correctAnswer": "Agricultural machinery & management",
+        "explanation": "Punjab government emphasized agricultural machinery & management to control stubble burning."
+      },
+      {
+        "question": "Which initiative is being promoted in Punjab to digitize land records?",
+        "options": [
+          "Digital Punjab Land Scheme",
+          "e-Land Portal",
+          "Punjab Land Records Modernization Program",
+          "Bhulekh Punjab"
+        ],
+        "correctAnswer": "Punjab Land Records Modernization Program",
+        "explanation": "The Punjab Land Records Modernization Program is being promoted to digitize land records."
+      },
+      {
+        "question": "Punjab is promoting which type of farming to increase farmers’ income recently?",
+        "options": [
+          "Traditional farming",
+          "Organic farming",
+          "Only wheat farming",
+          "Hydroponics only"
+        ],
+        "correctAnswer": "Organic farming",
+        "explanation": "Punjab is promoting organic farming to increase farmers’ income."
+      },
+      {
+        "question": "Punjab government has taken steps to improve which sector through new skill development programs?",
+        "options": [
+          "Tourism",
+          "Youth employment & skills",
+          "Defence",
+          "Banking"
+        ],
+        "correctAnswer": "Youth employment & skills",
+        "explanation": "Punjab government has taken steps to improve youth employment & skills through new skill development programs."
+      },
+      {
+        "question": "Punjab is focusing on which initiative to boost startups recently?",
+        "options": [
+          "Startup Punjab Policy",
+          "Digital Startup Scheme",
+          "Punjab Innovation Mission",
+          "Tech Punjab Program"
+        ],
+        "correctAnswer": "Startup Punjab Policy",
+        "explanation": "Punjab is focusing on the Startup Punjab Policy to boost startups."
+      },
+      {
+        "question": "Which issue has Punjab government been actively addressing through awareness campaigns recently?",
+        "options": [
+          "Traffic rules",
+          "Drug abuse",
+          "Water transport",
+          "Banking fraud"
+        ],
+        "correctAnswer": "Drug abuse",
+        "explanation": "Punjab government has been actively addressing drug abuse through awareness campaigns."
+      },
+      {
+        "question": "Punjab government is promoting which sector for export growth recently?",
+        "options": [
+          "Electronics",
+          "Agriculture & food processing",
+          "Mining",
+          "Defence"
+        ],
+        "correctAnswer": "Agriculture & food processing",
+        "explanation": "Punjab government is promoting agriculture & food processing for export growth."
+      },
+      {
+        "question": "Punjab has recently taken initiatives to improve which public service delivery system?",
+        "options": [
+          "Manual government offices",
+          "Digital governance services",
+          "Postal services",
+          "Railway services"
+        ],
+        "correctAnswer": "Digital governance services",
+        "explanation": "Punjab has taken initiatives to improve digital governance services."
+      },
+      {
+        "question": "Punjab government recently collaborated with which sector to boost EV (electric vehicle) adoption?",
+        "options": [
+          "Textile sector",
+          "Transport & Industry sector",
+          "Agriculture sector",
+          "Banking sector"
+        ],
+        "correctAnswer": "Transport & Industry sector",
+        "explanation": "Punjab government collaborated with the Transport & Industry sector to boost EV adoption."
+      },
+      {
+        "question": "Which initiative has Punjab promoted to strengthen sports infrastructure recently?",
+        "options": [
+          "Khelo Punjab Mission",
+          "Punjab Sports Policy",
+          "Youth Sports Scheme",
+          "Fit Punjab Program"
+        ],
+        "correctAnswer": "Punjab Sports Policy",
+        "explanation": "The Punjab Sports Policy has been promoted to strengthen sports infrastructure."
+      },
+      {
+        "question": "Punjab government has recently focused on improving which healthcare facility?",
+        "options": [
+          "Private hospitals only",
+          "Government hospitals & clinics",
+          "Only rural health camps",
+          "Only urban health centers"
+        ],
+        "correctAnswer": "Government hospitals & clinics",
+        "explanation": "Punjab government has focused on improving government hospitals & clinics."
+      },
+      {
+        "question": "Which sector in Punjab is being modernized through digital tools and technology?",
+        "options": [
+          "Agriculture",
+          "Mining",
+          "Tourism",
+          "Aviation"
+        ],
+        "correctAnswer": "Agriculture",
+        "explanation": "Agriculture in Punjab is being modernized through digital tools and technology."
+      },
+      {
+        "question": "Punjab has taken initiatives to improve which environmental issue recently?",
+        "options": [
+          "Marine pollution",
+          "Air pollution & stubble burning",
+          "Desertification",
+          "Oil spills"
+        ],
+        "correctAnswer": "Air pollution & stubble burning",
+        "explanation": "Punjab has taken initiatives to improve air pollution & stubble burning."
+      },
+      {
+        "question": "Punjab government is encouraging which industry to generate employment?",
+        "options": [
+          "Heavy mining",
+          "MSME sector",
+          "Oil refining",
+          "Shipbuilding"
+        ],
+        "correctAnswer": "MSME sector",
+        "explanation": "Punjab government is encouraging the MSME sector to generate employment."
+      },
+      {
+        "question": "Punjab has been promoting which tourism segment recently?",
+        "options": [
+          "Beach tourism",
+          "Religious tourism",
+          "Desert tourism",
+          "Snow tourism"
+        ],
+        "correctAnswer": "Religious tourism",
+        "explanation": "Punjab has been promoting religious tourism recently."
+      },
+      {
+        "question": "Which step has Punjab taken to improve law enforcement efficiency?",
+        "options": [
+          "Reducing police force",
+          "Digital policing & surveillance systems",
+          "Removing FIR system",
+          "Privatizing police"
+        ],
+        "correctAnswer": "Digital policing & surveillance systems",
+        "explanation": "Punjab has taken steps to improve law enforcement efficiency through digital policing & surveillance systems."
+      },
+      {
+        "question": "Punjab government has emphasized which sector to improve rural economy?",
+        "options": [
+          "IT sector",
+          "Agriculture & allied activities",
+          "Mining",
+          "Aviation"
+        ],
+        "correctAnswer": "Agriculture & allied activities",
+        "explanation": "Punjab government has emphasized agriculture & allied activities to improve the rural economy."
+      },
+      {
+        "question": "Punjab is focusing on which initiative to improve education quality in government schools?",
+        "options": [
+          "Digital books only",
+          "Teacher training & infrastructure improvement",
+          "Removing exams",
+          "Private school expansion"
+        ],
+        "correctAnswer": "Teacher training & infrastructure improvement",
+        "explanation": "Punjab is focusing on teacher training & infrastructure improvement to enhance education quality in government schools."
+      },
+      {
+        "question": "Newcastle Disease, that was recently seen in news, is caused by which agent?",
+        "options": [
+          "Virus",
+          "Bacteria",
+          "Fungus",
+          "Protozoa"
+        ],
+        "correctAnswer": "Virus",
+        "explanation": "Newcastle Disease is caused by a virus."
+      },
+      {
+        "question": "The SAMPANN platform is a flagship initiative of which organization?",
+        "options": [
+          "Ministry of Finance",
+          "Department of Telecommunications",
+          "Ministry of Labour and Employment",
+          "Department of Pension and Pensioners’ Welfare"
+        ],
+        "correctAnswer": "Department of Telecommunications",
+        "explanation": "The SAMPANN platform is an initiative of the Department of Telecommunications."
+      },
+      {
+        "question": "Which state recorded the highest rooftop solar installations in March 2026 under the PM Surya Ghar: Muft Bijli Yojana?",
+        "options": [
+          "Maharashtra",
+          "Gujarat",
+          "Rajasthan",
+          "Uttar Pradesh"
+        ],
+        "correctAnswer": "Uttar Pradesh",
+        "explanation": "Uttar Pradesh recorded the highest rooftop solar installations under the PM Surya Ghar: Muft Bijli Yojana in March 2026."
+      },
+      {
+        "question": "Capacity Building Commission (CBC) is associated with which programme?",
+        "options": [
+          "Digital India",
+          "Skill India",
+          "Mission Karmayogi",
+          "Startup India"
+        ],
+        "correctAnswer": "Mission Karmayogi",
+        "explanation": "The Capacity Building Commission (CBC) is associated with Mission Karmayogi."
+      },
+      {
+        "question": "Project Chetak operates primarily in which region of India?",
+        "options": [
+          "Rajasthan, Punjab, Gujarat",
+          "Karnataka, Kerala, Tamil Nadu",
+          "Jammu and Kashmir, Ladakh",
+          "Arunachal Pradesh, Sikkim, Assam"
+        ],
+        "correctAnswer": "Rajasthan, Punjab, Gujarat",
+        "explanation": "Project Chetak operates primarily in Rajasthan, Punjab, and Gujarat."
+      },
+      {
+        "question": "Barnawapara Wildlife Sanctuary is located in which state?",
+        "options": [
+          "Chhattisgarh",
+          "Odisha",
+          "Bihar",
+          "Jharkhand"
+        ],
+        "correctAnswer": "Chhattisgarh",
+        "explanation": "Barnawapara Wildlife Sanctuary is located in Chhattisgarh."
+      },
+      {
+        "question": "Recently, a rare Indian giant flying squirrel was spotted in which tiger reserve of Chhattisgarh?",
+        "options": [
+          "Guru Ghasidas-Tamor Pingla Tiger Reserve",
+          "Achanakmar Tiger Reserve",
+          "Indravati Tiger Reserve",
+          "Udanti-Sitanadi Tiger Reserve"
+        ],
+        "correctAnswer": "Udanti-Sitanadi Tiger Reserve",
+        "explanation": "The Indian giant flying squirrel was spotted in Udanti-Sitanadi Tiger Reserve."
+      },
+      {
+        "question": "A Pentagon AI program called Project Maven was launched by which country?",
+        "options": [
+          "United States",
+          "Iran",
+          "India",
+          "Australia"
+        ],
+        "correctAnswer": "United States",
+        "explanation": "Project Maven was launched by the United States."
+      },
+      {
+        "question": "What is IUCN conservation status of Bengal Florican that was recently seen in news?",
+        "options": [
+          "Endangered",
+          "Critically Endangered",
+          "Vulnerable",
+          "Least Concern"
+        ],
+        "correctAnswer": "Critically Endangered",
+        "explanation": "The IUCN conservation status of Bengal Florican is Critically Endangered."
+      },
+      {
+        "question": "Prevention of Blindness Week in India is observed annually during which period?",
+        "options": [
+          "March 1 – March 7",
+          "March 25 – March 31",
+          "April 1 – April 7",
+          "April 7 – April 14"
+        ],
+        "correctAnswer": "April 1 – April 7",
+        "explanation": "Prevention of Blindness Week is observed annually from April 1 to April 7."
+      },
+      {
+        "question": "Madras Hedgehog, that was recently seen in news, is primarily found in which region of India?",
+        "options": [
+          "Northern Plains and Himalayas",
+          "Peninsular India",
+          "Western Ghats only",
+          "None of the Above"
+        ],
+        "correctAnswer": "Peninsular India",
+        "explanation": "Madras Hedgehog is primarily found in Peninsular India."
+      },
+      {
+        "question": "Who has become India’s first openly queer Member of Parliament (MP)?",
+        "options": [
+          "Menaka Guruswamy",
+          "Indu Goswami",
+          "Kiran Chaudhary",
+          "Medha Kulkarni"
+        ],
+        "correctAnswer": "Menaka Guruswamy",
+        "explanation": "Menaka Guruswamy has become India’s first openly queer Member of Parliament (MP)."
+      },
+      {
+        "question": "The Production Linked Incentive Scheme for Food Processing Industry (PLISFPI) is implemented by which ministry?",
+        "options": [
+          "Ministry of Agriculture & Farmers Welfare",
+          "Ministry of Commerce & Industry",
+          "Ministry of Food Processing Industries",
+          "Ministry of Rural Development"
+        ],
+        "correctAnswer": "Ministry of Food Processing Industries",
+        "explanation": "PLISFPI is implemented by the Ministry of Food Processing Industries."
+      },
+      {
+        "question": "Umred Pauni Karhandla Wildlife Sanctuary is located in which state?",
+        "options": [
+          "Maharashtra",
+          "Karnataka",
+          "Kerala",
+          "Tamil Nadu"
+        ],
+        "correctAnswer": "Maharashtra",
+        "explanation": "Umred Pauni Karhandla Wildlife Sanctuary is located in Maharashtra."
+      },
+      {
+        "question": "Which state government has launched the “Majha Gaon, Arogyasampann Gaon” initiative?",
+        "options": [
+          "Odisha",
+          "Uttar Pradesh",
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "correctAnswer": "Maharashtra",
+        "explanation": "The Maharashtra state government launched the “Majha Gaon, Arogyasampann Gaon” initiative."
+      },
+      {
+        "question": "Pradhan Mantri Mudra Yojana was launched under which ministry?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of MSME",
+          "Ministry of Commerce",
+          "Ministry of Law and Justice"
+        ],
+        "correctAnswer": "Ministry of Finance",
+        "explanation": "Pradhan Mantri Mudra Yojana was launched under the Ministry of Finance."
+      },
+      {
+        "question": "Which state’s High Court released a comprehensive AI policy in April 2026 that strictly bans the use of AI in drafting judgments?",
+        "options": [
+          "Kerala",
+          "Gujarat",
+          "Mahrashtra",
+          "Karnataka"
+        ],
+        "correctAnswer": "Gujarat",
+        "explanation": "Gujarat High Court released an AI policy banning AI in drafting judgments."
+      },
+      {
+        "question": "CRPF Valour Day (Shaurya Diwas) is observed on which day every year?",
+        "options": [
+          "April 8",
+          "April 9",
+          "April 10",
+          "April 11"
+        ],
+        "correctAnswer": "April 9",
+        "explanation": "CRPF Valour Day is observed on April 9 every year."
+      },
+      {
+        "question": "Where was Yoga Mahotsav–2026 held?",
+        "options": [
+          "Maharashtra",
+          "Gujarat",
+          "Uttar Pradesh",
+          "Bihar"
+        ],
+        "correctAnswer": "Maharashtra",
+        "explanation": "Yoga Mahotsav–2026 was held in Maharashtra."
+      },
+      {
+        "question": "Food Safety and Standards Authority of India operates under which ministry?",
+        "options": [
+          "Ministry of Food Processing Industries",
+          "Ministry of Agriculture and Farmers Welfare",
+          "Ministry of Health and Family Welfare",
+          "Ministry of Commerce and Industry"
+        ],
+        "correctAnswer": "Ministry of Health and Family Welfare",
+        "explanation": "FSSAI operates under the Ministry of Health and Family Welfare."
+      },
+      {
+        "question": "Who is the current Chief Minister of Punjab?",
+        "options": [
+          "Amarinder Singh",
+          "Bhagwant Maan",
+          "Charanjit Singh Channi",
+          "Sukhbir Singh Badal"
+        ],
+        "correctAnswer": "Bhagwant Maan",
+        "explanation": "Bhagwant Maan is the current Chief Minister of Punjab."
+      },
+      {
+        "question": "The “School of Eminence” initiative in Punjab is related to which sector?",
+        "options": [
+          "Health",
+          "Education",
+          "Agriculture",
+          "Tourism"
+        ],
+        "correctAnswer": "Education",
+        "explanation": "The “School of Eminence” initiative is related to the education sector in Punjab."
+      },
+      {
+        "question": "Which of the following cities in Punjab are part of the Smart Cities Mission?",
+        "options": [
+          "Amritsar",
+          "Ludhiana",
+          "Jalandhar",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "explanation": "Amritsar, Ludhiana, and Jalandhar are all part of the Smart Cities Mission in Punjab."
+      },
+      {
+        "question": "The “Basera Scheme” in Punjab is associated with:",
+        "options": [
+          "Agriculture subsidies",
+          "Housing for slum dwellers",
+          "Women safety",
+          "Transport services"
+        ],
+        "correctAnswer": "Housing for slum dwellers",
+        "explanation": "The “Basera Scheme” is associated with housing for slum dwellers."
+      },
+      {
+        "question": "Where is the headquarters of Punjab Police located?",
+        "options": [
+          "Amritsar",
+          "Chandigarh",
+          "Patiala",
+          "Bathinda"
+        ],
+        "correctAnswer": "Chandigarh",
+        "explanation": "The headquarters of Punjab Police is located in Chandigarh."
+      },
+      {
+        "question": "Punjab launched which portal to provide citizen-centric services online?",
+        "options": [
+          "e-Punjab Portal",
+          "Sewa Portal",
+          "Digi Punjab Portal",
+          "Punjab One Portal"
+        ],
+        "correctAnswer": "Sewa Portal",
+        "explanation": "Punjab launched the Sewa Portal to provide citizen-centric services online."
+      },
+      {
+        "question": "Which river is known as the lifeline of Punjab?",
+        "options": [
+          "Ganga",
+          "Yamuna",
+          "Sutlej",
+          "Godavari"
+        ],
+        "correctAnswer": "Sutlej",
+        "explanation": "The Sutlej river is known as the lifeline of Punjab."
+      },
+      {
+        "question": "Punjab’s “Mission Rozgar” is related to:",
+        "options": [
+          "Agriculture development",
+          "Employment generation",
+          "Tourism promotion",
+          "Industrial exports"
+        ],
+        "correctAnswer": "Employment generation",
+        "explanation": "Punjab’s “Mission Rozgar” is related to employment generation."
+      },
+      {
+        "question": "Which city is known as the “Manchester of India” and is located in Punjab?",
+        "options": [
+          "Amritsar",
+          "Ludhiana",
+          "Jalandhar",
+          "Patiala"
+        ],
+        "correctAnswer": "Ludhiana",
+        "explanation": "Ludhiana is known as the “Manchester of India” and is located in Punjab."
+      },
+      {
+        "question": "Which international airport is located in Punjab?",
+        "options": [
+          "Indira Gandhi International Airport",
+          "Sri Guru Ram Dass Jee International Airport",
+          "Chhatrapati Shivaji Airport",
+          "Netaji Subhas Chandra Bose Airport"
+        ],
+        "correctAnswer": "Sri Guru Ram Dass Jee International Airport",
+        "explanation": "Sri Guru Ram Dass Jee International Airport is located in Punjab."
+      },
+      {
+        "question": "Who was recently appointed as the Vice-Chancellor of Panjab University (PU)?",
+        "options": [
+          "Renu Vig",
+          "Raj Kumar",
+          "Karamjeet Singh",
+          "Satbir Singh"
+        ],
+        "correctAnswer": "Renu Vig",
+        "explanation": "Renu Vig was recently appointed as the Vice-Chancellor of Panjab University (PU)."
+      },
+      {
+        "question": "Punjab government recently provided how many units of free electricity to households?",
+        "options": [
+          "100 units",
+          "200 units",
+          "300 units",
+          "500 units"
+        ],
+        "correctAnswer": "300 units",
+        "explanation": "Punjab government provided 300 units of free electricity to households."
+      },
+      {
+        "question": "Punjab launched which anti-corruption helpline/app for citizens?",
+        "options": [
+          "Punjab Vigil App",
+          "Anti-Corruption Action Line",
+          "Bhagwant Mann Helpline",
+          "Jan Suraksha App"
+        ],
+        "correctAnswer": "Anti-Corruption Action Line",
+        "explanation": "Punjab launched the Anti-Corruption Action Line for citizens."
+      },
+      {
+        "question": "Which drug awareness campaign has been actively promoted by the Punjab government recently?",
+        "options": [
+          "Nasha Mukt Bharat",
+          "War Against Drugs",
+          "Say No to Drugs Punjab",
+          "Drug-Free Punjab Mission"
+        ],
+        "correctAnswer": "War Against Drugs",
+        "explanation": "The “War Against Drugs” campaign has been actively promoted by the Punjab government."
+      },
+      {
+        "question": "Punjab Police recently strengthened which system to improve law enforcement tracking?",
+        "options": [
+          "e-FIR System",
+          "CCTNS (Crime and Criminal Tracking Network System)",
+          "Digital FIR App",
+          "Smart Police Portal"
+        ],
+        "correctAnswer": "CCTNS (Crime and Criminal Tracking Network System)",
+        "explanation": "Punjab Police strengthened the CCTNS (Crime and Criminal Tracking Network System) to improve law enforcement tracking."
+      },
+      {
+        "question": "Which sector is Punjab government focusing on through new industrial policies?",
+        "options": [
+          "IT and Startups",
+          "Textile only",
+          "Mining",
+          "Aviation"
+        ],
+        "correctAnswer": "IT and Startups",
+        "explanation": "Punjab government is focusing on IT and Startups through new industrial policies."
+      },
+      {
+        "question": "Punjab government recently emphasized crop diversification to reduce dependency on which crop?",
+        "options": [
+          "Wheat",
+          "Cotton",
+          "Rice (Paddy)",
+          "Sugarcane"
+        ],
+        "correctAnswer": "Rice (Paddy)",
+        "explanation": "Punjab government emphasized crop diversification to reduce dependency on Rice (Paddy)."
+      },
+      {
+        "question": "Which initiative was launched in Punjab to improve government school infrastructure?",
+        "options": [
+          "Smart School Program",
+          "School of Eminence",
+          "Digital Punjab Schools",
+          "Future School Mission"
+        ],
+        "correctAnswer": "School of Eminence",
+        "explanation": "The School of Eminence initiative was launched in Punjab to improve government school infrastructure."
+      },
+      {
+        "question": "Punjab has been actively promoting which renewable energy source recently?",
+        "options": [
+          "Wind Energy",
+          "Solar Energy",
+          "Hydro Energy",
+          "Nuclear Energy"
+        ],
+        "correctAnswer": "Solar Energy",
+        "explanation": "Punjab has been actively promoting Solar Energy recently."
+      },
+      {
+        "question": "Punjab government recently signed MoUs to boost which sector?",
+        "options": [
+          "Tourism",
+          "Agriculture exports",
+          "Industrial investment",
+          "Healthcare"
+        ],
+        "correctAnswer": "Industrial investment",
+        "explanation": "Punjab government signed MoUs to boost industrial investment."
+      }
+    ],
+    "name": "Admin",
+    "score": 0
+  }
+}

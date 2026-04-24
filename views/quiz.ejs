@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Generator | Playing</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="glass-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <div class="progress-text" id="progressText" style="margin-bottom: 0;">Question 1 of ?</div>
+            <button id="endQuizBtn" style="background: none; border: none; color: var(--danger); font-weight: 600; cursor: pointer; font-size: 0.9rem; padding: 0.25rem 0.5rem; border-radius: 6px; transition: all 0.2s;">End Quiz 🛑</button>
+        </div>
+        
+        <h2 id="questionText" style="text-align: left; margin-top: 1rem; color: var(--text-main);">Loading Question...</h2>
+        
+        <div id="optionsContainer" style="margin-top: 2rem;">
+            <!-- Options will be injected here -->
+        </div>
+
+        <div id="feedback" class="feedback-msg"></div>
+        
+        <div id="explanationContainer" class="hidden" style="background: rgba(155, 139, 244, 0.1); border-left: 4px solid var(--primary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
+            <p style="margin: 0; text-align: left; font-size: 0.95rem; color: var(--text-main);" id="explanationText"></p>
+        </div>
+
+        <button id="nextBtn" class="btn-primary hidden">Next Question ➔</button>
+    </div>
+
+    <!-- Inject data safely to avoid breaking EJS template -->
+    <script id="quizData" type="application/json">
+        <%- questions %>
+    </script>
+
+    <script>
+        const sessionId = "<%= sessionId %>";
+        const quizDataEl = document.getElementById('quizData');
+        const activeUser = new URLSearchParams(window.location.search).get('user') || '';
+        
+        let questions = [];
+        try {
+            questions = JSON.parse(quizDataEl.textContent);
+        } catch(e) {
+            console.error('Failed to load quiz data.');
+        }
+
+        // Shuffle utility function
+        function shuffleArray(array) {
+            if (!Array.isArray(array)) return;
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+        
+        // Randomize questions
+        shuffleArray(questions);
+        
+        // Randomize the options for each question
+        questions.forEach(q => {
+             if (q.options) shuffleArray(q.options);
+        });
+
+        let currentIndex = 0;
+        let score = 0;
+        let answeredQuestions = 0;
+        
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const progressText = document.getElementById('progressText');
+        const feedback = document.getElementById('feedback');
+        const explanationContainer = document.getElementById('explanationContainer');
+        const explanationText = document.getElementById('explanationText');
+        const nextBtn = document.getElementById('nextBtn');
+        const endQuizBtn = document.getElementById('endQuizBtn');
+
+        endQuizBtn.addEventListener('click', () => {
+            window.location.href = `/result/${sessionId}?score=${score}&total=${answeredQuestions}&user=${encodeURIComponent(activeUser)}`;
+        });
+
+        function loadQuestion() {
+            if(currentIndex >= questions.length || questions.length === 0) {
+                window.location.href = `/result/${sessionId}?score=${score}&total=${answeredQuestions}&user=${encodeURIComponent(activeUser)}`;
+                return;
+            }
+
+            const q = questions[currentIndex];
+            progressText.textContent = `Question ${currentIndex + 1} of ${questions.length}`;
+            questionText.textContent = q.question;
+            
+            optionsContainer.innerHTML = '';
+            feedback.className = 'feedback-msg hidden';
+            feedback.textContent = '';
+            explanationContainer.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+
+            q.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                btn.onclick = () => handleAnswer(btn, opt, q.correctAnswer, q.explanation);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function handleAnswer(selectedBtn, selectedVal, correctVal, exp) {
+            // Disable all options
+            const btns = optionsContainer.querySelectorAll('.option-btn');
+            btns.forEach(b => b.disabled = true);
+
+            // Using trim to avoid arbitrary whitespace errors
+            const sVal = String(selectedVal).trim();
+            const cVal = String(correctVal).trim();
+
+            if(sVal === cVal || sVal.includes(cVal) || cVal.includes(sVal)) {
+                selectedBtn.classList.add('correct');
+                feedback.textContent = 'Correct ✅';
+                feedback.className = 'feedback-msg correct-text';
+                score++;
+            } else {
+                selectedBtn.classList.add('wrong');
+                feedback.textContent = 'Wrong ❌';
+                feedback.className = 'feedback-msg wrong-text';
+                // Highlight correct option
+                btns.forEach(b => {
+                    const btnVal = String(b.textContent).trim();
+                    if(btnVal === cVal || btnVal.includes(cVal) || cVal.includes(btnVal)) {
+                        b.classList.add('correct');
+                    }
+                });
+            }
+
+            if(exp) {
+                explanationText.innerHTML = `<strong>Explanation:</strong> ${exp}`;
+                explanationContainer.classList.remove('hidden');
+            }
+            
+            answeredQuestions++;
+            nextBtn.classList.remove('hidden');
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex++;
+            loadQuestion();
+        });
+
+        // Initialize quiz
+        loadQuestion();
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Generator | Upload</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="glass-card" id="uploadCard">
+        <h2>Let's begin, <%= name %> 🚀</h2>
+        <p style="font-style: italic; color: var(--primary);">"Learning never exhausts the mind."</p>
+        
+        <form id="uploadForm">
+            <input type="hidden" name="name" value="<%= name %>">
+            <label for="pdf" style="display:block; margin-bottom:1rem; font-weight:600; text-align: left;">Select a PDF textbook or notes:</label>
+            <input type="file" name="pdf" id="pdf" accept=".pdf" required>
+            <button type="submit" class="btn-primary" id="generateBtn">Generate Quiz ✨</button>
+        </form>
+        <div id="errorMsg" class="feedback-msg wrong-text hidden"></div>
+    </div>
+
+    <!-- Loading State -->
+    <div class="glass-card hidden" id="loadingCard" style="text-align: center;">
+        <div class="loader"></div>
+        <h2>Generating your quiz...</h2>
+        <p>Our AI analyzes your document to craft meaningful questions. This may take a moment.</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('uploadForm');
+        const uploadCard = document.getElementById('uploadCard');
+        const loadingCard = document.getElementById('loadingCard');
+        const errorMsg = document.getElementById('errorMsg');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            errorMsg.classList.add('hidden');
+            
+            const fileInput = document.getElementById('pdf');
+            if(!fileInput.files[0]) return;
+
+            // Transition to Loading State
+            uploadCard.classList.add('hidden');
+            loadingCard.classList.remove('hidden');
+
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if(response.ok) {
+                    window.location.href = `/quiz/${data.sessionId}`;
+                } else {
+                    throw new Error(data.error || 'Request failed.');
+                }
+            } catch (err) {
+                loadingCard.classList.add('hidden');
+                uploadCard.classList.remove('hidden');
+                errorMsg.textContent = err.message;
+                errorMsg.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

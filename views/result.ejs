@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Generator | Result</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="glass-card" style="text-align: center;">
+        <h1 style="font-size: 4rem; margin-bottom: 0;">🎉</h1>
+        <h2 style="margin-top: 1rem;">Quiz Completed!</h2>
+        
+        <div style="font-size: 3rem; font-weight: 700; color: var(--primary); margin: 2rem 0;">
+            <%= score %> / <%= total %>
+        </div>
+
+        <% 
+            let percentage = total > 0 ? (score / total) * 100 : 0;
+            let msg = '';
+            if(percentage >= 80) msg = 'Excellent work, ' + name + '! 🌟';
+            else if(percentage >= 50) msg = 'Good job, ' + name + '! Keep it up. 👍';
+            else msg = 'Keep practicing, ' + name + '! You got this. 💪';
+        %>
+
+        <p style="font-size: 1.3rem; font-weight: 600; color: var(--text-main);"><%= msg %></p>
+        
+        <a href="/dashboard/<%= encodeURIComponent(name) %>" class="btn-primary" style="margin-top: 2rem; display: inline-block; max-width: 250px;">Back to Dashboard</a>
+    </div>
+</body>
+</html>

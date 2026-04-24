@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Generator | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .quote-box {
+            background: rgba(155, 139, 244, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            font-style: italic;
+            text-align: left;
+            line-height: 1.6;
+        }
+        .quote-author {
+            font-weight: 600;
+            margin-top: 1rem;
+            text-align: right;
+            font-style: normal;
+        }
+        .quiz-list {
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .quiz-item {
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #e2e8f0;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .quiz-title {
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+        .quiz-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            width: auto;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-card" style="max-width: 800px; width: 100%;" id="uploadCard">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+            <h2 style="text-align: left; margin-bottom: 0;">Hey <%= name %> 👋</h2>
+            
+            <% if (typeof globalQuizzes !== 'undefined' && globalQuizzes.length > 0) { %>
+                <button type="button" id="toggleViewBtn" class="btn-primary btn-small" onclick="toggleDashboardView()" style="background: rgba(155, 139, 244, 0.15); color: var(--primary); border: 2px solid var(--primary); box-shadow: none; font-weight: 600;">
+                    📚 Standard Default Quizzes
+                </button>
+            <% } %>
+        </div>
+
+        <!-- Standard Quizzes Section (Hidden initially) -->
+        <div id="standardArea" style="display: none;">
+            <h3 style="text-align: left; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--primary);">Standard Default Quizzes</h3>
+            <% if (typeof globalQuizzes !== 'undefined' && globalQuizzes.length > 0) { %>
+                <% globalQuizzes.forEach(quiz => { %>
+                    <div class="quiz-item" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(255,255,255,0.6); border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 1rem;">
+                        <div style="text-align: left;">
+                            <h4 style="margin-bottom: 0.25rem; color: var(--text-main);"><%= quiz.filename %></h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Generated on <%= quiz.createdAt %> • <%= quiz.questions.length %> Questions</span>
+                        </div>
+                        <a href="/quiz/<%= quiz.id %>?user=<%= encodeURIComponent(name) %>" class="btn-primary btn-small" style="width: auto; padding: 0.5rem 1rem; font-size: 0.9rem; text-decoration: none;">Take Quiz</a>
+                    </div>
+                <% }) %>
+            <% } %>
+        </div>
+        
+        <!-- Personal Area (Visible initially) -->
+        <div id="personalArea">
+            <div class="quote-box">
+            "Not every day will feel perfect, and that’s okay.<br>
+            Consistency matters more than motivation ever will.<br>
+            Show up, do your part, and keep moving forward.<br>
+            One day, you’ll thank yourself for not quitting"<br>
+            <div class="quote-author">~ Karan</div>
+        </div>
+
+        <h3 style="text-align: left; margin-top: 2rem;">Upload PDF(s)</h3>
+        <p style="text-align: left; margin-bottom: 1rem;">Upload one or more PDFs to combine them into one mega-quiz.</p>
+        <form id="uploadForm" style="display: flex; gap: 1rem; align-items: flex-start; flex-direction: column;">
+            <input type="hidden" name="name" value="<%= name %>">
+            
+            <div id="fileListContainer" style="width: 100%; text-align: left; margin-bottom: 0.5rem;">
+                <!-- List selected files here -->
+            </div>
+            
+            <div style="display: flex; gap: 1rem; width: 100%;">
+                <label for="pdf" class="btn-primary" style="background: var(--card-bg); color: var(--primary); border: 2px solid var(--primary); width: auto; font-size:1rem; cursor: pointer; padding: 0.5rem 1rem; display: inline-block;">+ Add PDF</label>
+                <input type="file" id="pdf" accept=".pdf" multiple style="display: none;">
+            </div>
+
+            <button type="submit" class="btn-primary" id="generateBtn" style="margin-top: 1rem;" disabled>Generate Mega Quiz ✨</button>
+        </form>
+        <div id="errorMsg" class="feedback-msg wrong-text hidden"></div>
+
+        <div class="quiz-list">
+            <h3 style="text-align: left; margin-top: 2rem; margin-bottom: 1rem;">Your Past Quizzes</h3>
+            <% if (quizzes.length === 0) { %>
+                <p style="text-align: left; color: var(--text-muted); font-size: 0.9rem;">No private quizzes taken yet.</p>
+            <% } else { %>
+                <% quizzes.reverse().forEach(quiz => { %>
+                    <div class="quiz-item">
+                        <div>
+                            <div class="quiz-title"><%= quiz.filename.replace('.pdf', '') %></div>
+                            <div class="quiz-meta"><%= quiz.questions.length %> questions • Generated on <%= quiz.createdAt %></div>
+                        </div>
+                        <a href="/quiz/<%= quiz.id %>?user=<%= encodeURIComponent(name) %>" class="btn-primary btn-small">Take Again</a>
+                    </div>
+                <% }) %>
+            <% } %>
+        </div>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div class="glass-card hidden" id="loadingCard" style="text-align: center; max-width: 800px; width: 100%;">
+        <div class="loader"></div>
+        <h2>Generating your quiz...</h2>
+        <p>Our AI analyzes your document to craft meaningful questions. This may take a moment.</p>
+    </div>
+
+    <script>
+        function toggleDashboardView() {
+            const standardArea = document.getElementById('standardArea');
+            const personalArea = document.getElementById('personalArea');
+            const toggleBtn = document.getElementById('toggleViewBtn');
+            
+            if (standardArea.style.display === 'none') {
+                standardArea.style.display = 'block';
+                personalArea.style.display = 'none';
+                toggleBtn.innerHTML = '📁 Upload Your Own PDF';
+            } else {
+                standardArea.style.display = 'none';
+                personalArea.style.display = 'block';
+                toggleBtn.innerHTML = '📚 Standard Default Quizzes';
+            }
+        }
+
+        const form = document.getElementById('uploadForm');
+        const uploadCard = document.getElementById('uploadCard');
+        const loadingCard = document.getElementById('loadingCard');
+        const errorMsg = document.getElementById('errorMsg');
+        const fileInput = document.getElementById('pdf');
+        const fileListContainer = document.getElementById('fileListContainer');
+        const generateBtn = document.getElementById('generateBtn');
+
+        let selectedFiles = [];
+
+        fileInput.addEventListener('change', (e) => {
+            if(fileInput.files.length > 0) {
+                for(let i=0; i<fileInput.files.length; i++){
+                    selectedFiles.push(fileInput.files[i]);
+                }
+                renderFileList();
+                fileInput.value = ''; // clear input so same file can trigger change again
+            }
+        });
+
+        function renderFileList() {
+            fileListContainer.innerHTML = '';
+            if (selectedFiles.length > 0) {
+                generateBtn.disabled = false;
+                selectedFiles.forEach((f, idx) => {
+                    const item = document.createElement('div');
+                    item.style.padding = "0.75rem 1rem";
+                    item.style.background = "rgba(255,255,255,0.7)";
+                    item.style.border = "1px solid #e2e8f0";
+                    item.style.borderRadius = "8px";
+                    item.style.marginBottom = "0.5rem";
+                    item.style.display = "flex";
+                    item.style.justifyContent = "space-between";
+                    item.style.alignItems = "center";
+                    
+                    const nameSpan = document.createElement('span');
+                    nameSpan.textContent = f.name;
+                    nameSpan.style.fontWeight = "600";
+                    nameSpan.style.color = "var(--text-main)";
+                    
+                    const removeBtn = document.createElement('span');
+                    removeBtn.textContent = '❌';
+                    removeBtn.style.cursor = "pointer";
+                    removeBtn.onclick = () => {
+                        selectedFiles.splice(idx, 1);
+                        renderFileList();
+                    };
+
+                    item.appendChild(nameSpan);
+                    item.appendChild(removeBtn);
+                    fileListContainer.appendChild(item);
+                });
+            } else {
+                generateBtn.disabled = true;
+            }
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            errorMsg.classList.add('hidden');
+            
+            if(selectedFiles.length === 0) return;
+
+            uploadCard.classList.add('hidden');
+            loadingCard.classList.remove('hidden');
+
+            const formData = new FormData();
+            formData.append('name', document.querySelector('input[name="name"]').value);
+            selectedFiles.forEach(file => {
+                formData.append('pdf', file);
+            });
+            
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if(response.ok) {
+                    const activeUserName = encodeURIComponent(document.querySelector('input[name="name"]').value);
+                    window.location.href = `/quiz/${data.sessionId}?user=${activeUserName}`;
+                } else {
+                    throw new Error(data.error || 'Request failed.');
+                }
+            } catch (err) {
+                loadingCard.classList.add('hidden');
+                uploadCard.classList.remove('hidden');
+                errorMsg.textContent = err.message;
+                errorMsg.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
