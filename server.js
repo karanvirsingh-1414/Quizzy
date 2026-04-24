@@ -140,7 +140,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     console.log(`[API CALL] Generating 100 questions. Hash: ${contentHash}`);
 
     const prompt = `
-      Based on the following extracted PDF text, generate exactly 100 multiple-choice questions.
+      Based on the following extracted PDF text, generate exactly 50 multiple-choice questions.
       Output STRICTLY as a JSON object with a single key "questions" containing an array of objects.
       Each object must have exactly these keys:
       "question": "question text",
@@ -155,7 +155,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     `;
 
     const model = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash',
+      model: 'gemini-2.0-flash-lite',  // 1500 RPD free tier — highest quota
       generationConfig: { responseMimeType: 'application/json' }
     });
 
@@ -166,7 +166,14 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     } catch (err) {
       const is429 = err.status === 429 || (err.message && err.message.includes('429'));
       const is503 = err.status === 503 || (err.message && err.message.includes('503'));
-      if (is429) throw new Error('⚠️ API quota reached. Please wait 1 minute and try again.');
+      if (is429) {
+        // Check if it's daily limit or per-minute limit
+        const isDaily = err.message && (err.message.includes('daily') || err.message.includes('quota'));
+        if (isDaily) {
+          throw new Error('⚠️ Daily API quota exhausted. Please try again tomorrow, or contact the admin.');
+        }
+        throw new Error('⚠️ Too many requests. Please wait 1 minute and try again.');
+      }
       if (is503) throw new Error('⚠️ AI service temporarily unavailable. Please try again.');
       throw err;
     } finally {
