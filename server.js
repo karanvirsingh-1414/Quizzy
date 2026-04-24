@@ -111,11 +111,11 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       "explanation": "short explanation"
 
       Text to analyze:
-      ${combinedText.substring(0, 100000)} // Ensure we stay under context limits
+      ${combinedText.substring(0, 50000)} // Reduced to 50k chars to avoid token overflow
     `;
 
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-2.5-flash",  // 2.5-flash: current free tier model (1.5 is deprecated)
       generationConfig: {
         responseMimeType: "application/json",
       }
@@ -123,17 +123,27 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
 
     let responseText = "";
     let retryCount = 0;
-    while (retryCount < 4) {
+    const MAX_RETRIES = 5;
+    while (retryCount < MAX_RETRIES) {
       try {
         const response = await model.generateContent(prompt);
         responseText = response.response.text();
         break;
       } catch (err) {
-        if (err.status === 503 && retryCount < 3) {
-          console.log(`503 Server Busy... Auto retrying in 4s (${retryCount+1}/3)`);
-          await new Promise(r => setTimeout(r, 4000));
+        const is429 = err.status === 429 || (err.message && err.message.includes('429'));
+        const is503 = err.status === 503 || (err.message && err.message.includes('503'));
+
+        if ((is429 || is503) && retryCount < MAX_RETRIES - 1) {
+          // Exponential backoff: 15s, 30s, 60s, 120s — gives quota time to reset
+          const waitTime = Math.pow(2, retryCount) * 15000;
+          const errorType = is429 ? '429 Rate Limit' : '503 Server Busy';
+          console.log(`[${errorType}] Retrying in ${waitTime/1000}s... (attempt ${retryCount+1}/${MAX_RETRIES-1})`);
+          await new Promise(r => setTimeout(r, waitTime));
           retryCount++;
         } else {
+          if (is429) {
+            throw new Error('⚠️ AI quota limit reached. Please wait 1-2 minutes and try again. (Free tier: 15 requests/min)');
+          }
           throw err;
         }
       }
