@@ -2234,5 +2234,463 @@
     ],
     "name": "Admin",
     "score": 0
+  },
+  "1e110651-c0dc-4274-9cec-4360f6d8e442": {
+    "id": "1e110651-c0dc-4274-9cec-4360f6d8e442",
+    "filename": "english_grammar_quiz.pdf",
+    "createdAt": "4/24/2026",
+    "questions": [
+      {
+        "question": "Choose the correct sentence:",
+        "options": [
+          "She don't like coffee.",
+          "She doesn't likes coffee.",
+          "She doesn't like coffee.",
+          "She don't likes coffee."
+        ],
+        "correctAnswer": "She doesn't like coffee.",
+        "explanation": "‘Doesn't’ is used with singular subjects and base verb."
+      },
+      {
+        "question": "Fill in the blank: He ____ to school every day.",
+        "options": [
+          "go",
+          "goes",
+          "gone",
+          "going"
+        ],
+        "correctAnswer": "goes",
+        "explanation": "Third person singular uses 'goes'."
+      },
+      {
+        "question": "Choose the correct article: ____ apple a day keeps the doctor away.",
+        "options": [
+          "A",
+          "An",
+          "The",
+          "No article"
+        ],
+        "correctAnswer": "An",
+        "explanation": "'Apple' starts with vowel sound, so 'An'."
+      },
+      {
+        "question": "Identify the correct tense: She ____ her homework already.",
+        "options": [
+          "finish",
+          "finished",
+          "has finished",
+          "finishing"
+        ],
+        "correctAnswer": "has finished",
+        "explanation": "Present perfect tense used with 'already'."
+      },
+      {
+        "question": "Choose the correct preposition: He is good ____ math.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "for"
+        ],
+        "correctAnswer": "at",
+        "explanation": "'Good at' is correct usage."
+      },
+      {
+        "question": "Fill in the blank: They ____ playing football now.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "correctAnswer": "are",
+        "explanation": "'They' takes 'are'."
+      },
+      {
+        "question": "Choose correct form: I have ____ my work.",
+        "options": [
+          "complete",
+          "completed",
+          "completing",
+          "completes"
+        ],
+        "correctAnswer": "completed",
+        "explanation": "Past participle used with 'have'."
+      },
+      {
+        "question": "Choose correct sentence:",
+        "options": [
+          "He is more taller than me.",
+          "He is taller than me.",
+          "He is tallest than me.",
+          "He more tall than me."
+        ],
+        "correctAnswer": "He is taller than me.",
+        "explanation": "Comparative form is 'taller'."
+      },
+      {
+        "question": "Fill in the blank: She has been waiting ____ two hours.",
+        "options": [
+          "since",
+          "for",
+          "from",
+          "by"
+        ],
+        "correctAnswer": "for",
+        "explanation": "'For' is used with duration."
+      },
+      {
+        "question": "Choose correct option: Neither Ram nor Shyam ____ coming.",
+        "options": [
+          "are",
+          "is",
+          "were",
+          "be"
+        ],
+        "correctAnswer": "is",
+        "explanation": "Verb agrees with nearest subject."
+      },
+      {
+        "question": "Choose correct passive voice: They built a house.",
+        "options": [
+          "A house built by them.",
+          "A house was built by them.",
+          "A house is built by them.",
+          "A house build by them."
+        ],
+        "correctAnswer": "A house was built by them.",
+        "explanation": "Past passive: was built."
+      },
+      {
+        "question": "Fill in blank: If I ____ you, I would help.",
+        "options": [
+          "am",
+          "was",
+          "were",
+          "be"
+        ],
+        "correctAnswer": "were",
+        "explanation": "Subjunctive mood uses 'were'."
+      },
+      {
+        "question": "Choose correct pronoun: This is the boy ____ won the race.",
+        "options": [
+          "which",
+          "who",
+          "whom",
+          "whose"
+        ],
+        "correctAnswer": "who",
+        "explanation": "'Who' for subject."
+      },
+      {
+        "question": "Choose correct word: She speaks English ____.",
+        "options": [
+          "fluent",
+          "fluently",
+          "fluency",
+          "more fluent"
+        ],
+        "correctAnswer": "fluently",
+        "explanation": "Adverb needed."
+      },
+      {
+        "question": "Fill in blank: He ____ never seen this movie.",
+        "options": [
+          "have",
+          "has",
+          "had",
+          "having"
+        ],
+        "correctAnswer": "has",
+        "explanation": "'He has never seen'."
+      },
+      {
+        "question": "Choose correct sentence:",
+        "options": [
+          "Each of the students have a book.",
+          "Each of the students has a book.",
+          "Each students have book.",
+          "Each student have a book."
+        ],
+        "correctAnswer": "Each of the students has a book.",
+        "explanation": "'Each' takes singular verb."
+      },
+      {
+        "question": "Choose correct form: I prefer tea ____ coffee.",
+        "options": [
+          "than",
+          "over",
+          "to",
+          "from"
+        ],
+        "correctAnswer": "to",
+        "explanation": "Correct phrase: prefer A to B."
+      },
+      {
+        "question": "Fill in blank: She ____ in Delhi since 2010.",
+        "options": [
+          "lives",
+          "lived",
+          "has lived",
+          "living"
+        ],
+        "correctAnswer": "has lived",
+        "explanation": "Present perfect for 'since'."
+      },
+      {
+        "question": "Choose correct sentence:",
+        "options": [
+          "He did not knew the answer.",
+          "He did not know the answer.",
+          "He did not knows the answer.",
+          "He not know the answer."
+        ],
+        "correctAnswer": "He did not know the answer.",
+        "explanation": "After 'did', base verb is used."
+      },
+      {
+        "question": "Fill in blank: The book is ____ the table.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "correctAnswer": "on",
+        "explanation": "'On the table' is correct."
+      }
+    ],
+    "name": "Karan",
+    "score": 0
+  },
+  "9edd8322-3274-42ec-ac04-a21fce782dd8": {
+    "id": "9edd8322-3274-42ec-ac04-a21fce782dd8",
+    "filename": "LEGAL APTITUDE.pdf",
+    "createdAt": "4/24/2026",
+    "questions": [
+      {
+        "question": "Based on the principle of theft, is Rohan guilty if he picks up a pen thinking it's his own, but it belongs to the shop?",
+        "options": [
+          "Rohan is guilty",
+          "Rohan is not guilty",
+          "Rohan must pay fine",
+          "Rohan is partially guilty"
+        ],
+        "correctAnswer": "Rohan is not guilty",
+        "explanation": "Rohan lacked dishonest intention, which is a key element for theft. He thought the pen was his, so he did not intend to steal."
+      },
+      {
+        "question": "If A forces B to sign a contract at gunpoint, according to the principle of free consent, what is the status of the contract?",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Voidable",
+        "explanation": "Consent obtained under threat (gunpoint) is not free consent. Therefore, the contract is voidable at B's option."
+      },
+      {
+        "question": "Aman breaks a law and claims he didn't know it existed. Based on the principle of 'ignorance of law', what is his liability?",
+        "options": [
+          "Not liable",
+          "Liable",
+          "Depends",
+          "Excused"
+        ],
+        "correctAnswer": "Liable",
+        "explanation": "The principle states that not knowing a law does not excuse one from its consequences. Aman is still accountable."
+      },
+      {
+        "question": "X hits Y to protect himself from Y's attack. Based on the principle of private defense, what is X's status?",
+        "options": [
+          "Guilty",
+          "Not guilty",
+          "Partially guilty",
+          "Civil offence"
+        ],
+        "correctAnswer": "Not guilty",
+        "explanation": "The right of private defense allows a person to use force to protect themselves from an attack, making X's action permissible."
+      },
+      {
+        "question": "A 16-year-old signs a loan agreement. According to the principle concerning minors and contracts, what is the status of this agreement?",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "A minor (under 18) lacks the legal capacity to enter into a contract, making any such agreement void from the beginning."
+      },
+      {
+        "question": "A publishes false statements about B in a newspaper. Based on the principle of defamation, what offense has A committed?",
+        "options": [
+          "No offence",
+          "Defamation",
+          "Assault",
+          "Theft"
+        ],
+        "correctAnswer": "Defamation",
+        "explanation": "Publishing false statements that harm another's reputation constitutes defamation."
+      },
+      {
+        "question": "X lies and sells a product to Y. What is the status of Y's consent based on the principle regarding consent obtained by fraud?",
+        "options": [
+          "Valid consent",
+          "Invalid consent",
+          "No contract",
+          "Legal sale"
+        ],
+        "correctAnswer": "Invalid consent",
+        "explanation": "Consent procured through deceit (lying) is considered fraudulent and therefore invalid."
+      },
+      {
+        "question": "A promises to give B ₹10,000 as a gift. According to the principle of consideration, what is the status of this agreement?",
+        "options": [
+          "Valid",
+          "Void",
+          "Illegal",
+          "Voidable"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "A valid contract generally requires 'consideration' (something of value exchanged). A gift lacks consideration, making the agreement void."
+      },
+      {
+        "question": "A drives rashly and injures a pedestrian. Based on the principle of negligence, what is A liable for?",
+        "options": [
+          "Not liable",
+          "Liable for negligence",
+          "No offence",
+          "Only civil case"
+        ],
+        "correctAnswer": "Liable for negligence",
+        "explanation": "Rash driving demonstrates a failure to take reasonable care, leading to liability for negligence when injury occurs."
+      },
+      {
+        "question": "X raises a stick to hit Y but does not make physical contact. According to the principle of assault, what offense has X committed?",
+        "options": [
+          "No offence",
+          "Assault",
+          "Battery",
+          "Theft"
+        ],
+        "correctAnswer": "Assault",
+        "explanation": "Assault involves creating a reasonable apprehension or fear of immediate harmful contact, even without actual physical contact."
+      },
+      {
+        "question": "A leaves a pit open on the road without warning signs, and B falls into it, getting injured. Based on the principle of negligence, what is A's liability?",
+        "options": [
+          "A is not liable",
+          "A is liable for negligence",
+          "B is responsible",
+          "No offence"
+        ],
+        "correctAnswer": "A is liable for negligence",
+        "explanation": "A failed to take reasonable care by not placing warning signs for the open pit, leading to B's injury. This constitutes negligence."
+      },
+      {
+        "question": "X threatens Y to sell his house, and Y agrees due to fear. Based on the principle of free consent, what is the status of the contract?",
+        "options": [
+          "Valid contract",
+          "Void contract",
+          "Voidable contract",
+          "Illegal contract"
+        ],
+        "correctAnswer": "Voidable contract",
+        "explanation": "Consent obtained under threat or fear is not freely given, making the contract voidable at the option of the person whose consent was not free (Y)."
+      },
+      {
+        "question": "A slaps B during an argument. Based on the principle of battery, what offense has A committed?",
+        "options": [
+          "Assault only",
+          "Battery",
+          "No offence",
+          "Defamation"
+        ],
+        "correctAnswer": "Battery",
+        "explanation": "Battery involves the intentional use of force or unwanted physical contact without consent, which a slap demonstrates."
+      },
+      {
+        "question": "A is driving carefully, but suddenly a child runs in front and gets injured. Based on the principle of accidental acts without negligence, what is A's liability?",
+        "options": [
+          "A is liable",
+          "A is not liable",
+          "A is partially liable",
+          "Criminal offence"
+        ],
+        "correctAnswer": "A is not liable",
+        "explanation": "Since A was driving carefully and the incident was an unavoidable accident without negligence on A's part, A is not held liable."
+      },
+      {
+        "question": "X encourages Y to steal a bike, and Y proceeds to steal it. Based on the principle of instigation, who is guilty?",
+        "options": [
+          "Only Y is guilty",
+          "Only X is guilty",
+          "Both X and Y are guilty",
+          "No offence"
+        ],
+        "correctAnswer": "Both X and Y are guilty",
+        "explanation": "The principle states that both the instigator and the perpetrator of a crime are liable. X instigated, and Y committed the theft."
+      },
+      {
+        "question": "A agrees to buy a horse from B, but unbeknownst to both, the horse was already dead. According to the principle of mistake of fact, what is the status of this contract?",
+        "options": [
+          "Valid",
+          "Void",
+          "Voidable",
+          "Illegal"
+        ],
+        "correctAnswer": "Void",
+        "explanation": "A mutual mistake regarding a fundamental fact (the existence of the horse) makes the contract void."
+      },
+      {
+        "question": "A tells B privately that C is a thief, and no one else overhears. Based on the principle of defamation, has defamation occurred?",
+        "options": [
+          "Defamation",
+          "No defamation",
+          "Assault",
+          "Battery"
+        ],
+        "correctAnswer": "No defamation",
+        "explanation": "Defamation requires communication of the false statement to a third party. Since it was a private conversation between A and B, it does not meet this criterion."
+      },
+      {
+        "question": "A enters B's land without permission to take a shortcut. Based on the principle of trespass, what offense has A committed?",
+        "options": [
+          "No offence",
+          "Trespass",
+          "Theft",
+          "Negligence"
+        ],
+        "correctAnswer": "Trespass",
+        "explanation": "Entering someone's property without their permission, even for a shortcut, constitutes trespass."
+      },
+      {
+        "question": "A sells a car to B, stating it is new, while genuinely believing this to be true, although it is false. Based on the principle of misrepresentation, what is A liable for?",
+        "options": [
+          "Fraud",
+          "Misrepresentation",
+          "No issue",
+          "Theft"
+        ],
+        "correctAnswer": "Misrepresentation",
+        "explanation": "Misrepresentation occurs when a false statement is made, but the person making it genuinely believes it to be true, distinguishing it from fraud which requires dishonest intent."
+      },
+      {
+        "question": "A steals a watch and sells it to B, who buys it in good faith. Based on the principle of 'transfer of title', who remains the owner?",
+        "options": [
+          "B becomes owner",
+          "A remains owner",
+          "Original owner remains owner",
+          "Both A and B owners"
+        ],
+        "correctAnswer": "Original owner remains owner",
+        "explanation": "A thief does not have a valid title to the stolen goods. Therefore, A cannot transfer a better title to B than A possessed, meaning the original owner retains ownership."
+      }
+    ],
+    "name": "Karan",
+    "score": 0
   }
 }

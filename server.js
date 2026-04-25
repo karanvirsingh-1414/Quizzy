@@ -158,7 +158,7 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       try { fs.unlinkSync(file.path); } catch (e) {}
     }
 
-    const textSlice = combinedText.substring(0, 50000);
+    const textSlice = combinedText.substring(0, 100000);
     const contentHash = getContentHash(textSlice);
     const userName = req.body.name || 'User';
     const joinedFilenames = filenames.join(' + ');
@@ -185,9 +185,18 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     }
     isGenerating = true;
 
-    console.log(`[API CALL] Generating 50 questions. Hash: ${contentHash}`);
+    console.log(`[API CALL] Generating 100 questions in 2 batches. Hash: ${contentHash}`);
 
-    const prompt = `
+    const half = Math.floor(textSlice.length / 2);
+    const part1 = textSlice.substring(0, half);
+    const part2 = textSlice.substring(half);
+
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.5-flash',
+      generationConfig: { responseMimeType: 'application/json' }
+    });
+
+    const buildPrompt = (text) => `
       Based on the following extracted PDF text, generate exactly 50 multiple-choice questions.
       Output STRICTLY as a JSON object with a single key "questions" containing an array of objects.
       Each object must have exactly these keys:
@@ -199,19 +208,19 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       IMPORTANT: correctAnswer must be the EXACT string of one of the options.
 
       Text to analyze:
-      ${textSlice}
+      ${text}
     `;
 
-    const model = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash-lite',
-      generationConfig: { responseMimeType: 'application/json' }
-    });
-
-    let responseText = '';
+    let responseText1 = '', responseText2 = '';
     try {
-      const response = await model.generateContent(prompt);
-      responseText = response.response.text();
+      const [res1, res2] = await Promise.all([
+        model.generateContent(buildPrompt(part1)),
+        model.generateContent(buildPrompt(part2))
+      ]);
+      responseText1 = res1.response.text();
+      responseText2 = res2.response.text();
     } catch (err) {
+      console.error('API Error Details:', err.message, err.status);
       const is429 = err.status === 429 || (err.message && err.message.includes('429'));
       const is503 = err.status === 503 || (err.message && err.message.includes('503'));
       if (is429) {
@@ -225,14 +234,15 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
       isGenerating = false;
     }
 
-    let parsedResult;
+    let parsed1, parsed2;
     try {
-      parsedResult = JSON.parse(responseText);
+      parsed1 = JSON.parse(responseText1);
+      parsed2 = JSON.parse(responseText2);
     } catch (err) {
       throw new Error('Quiz generation was cut off. Try uploading a smaller PDF.');
     }
 
-    const questions = parsedResult.questions || [];
+    const questions = [...(parsed1.questions || []), ...(parsed2.questions || [])];
 
     // ── Save Cache & Session to MongoDB ──
     await QuizCache.create({ contentHash, questions });
@@ -254,6 +264,43 @@ app.post('/api/generate', upload.array('pdf', 10), async (req, res) => {
     console.error('Quiz Generation Error:', error.message);
     if (req.files) req.files.forEach(f => { try { fs.unlinkSync(f.path); } catch (e) {} });
     res.status(500).json({ error: error.message || 'Unknown error occurred.' });
+  }
+});
+
+
+app.get('/api/clone-quiz/:sessionId', async (req, res) => {
+  try {
+    const userName = req.query.user;
+    if (!userName) return res.redirect('/');
+    
+    const originalSession = await Session.findOne({ id: req.params.sessionId });
+    if (!originalSession) return res.redirect('/');
+    
+    const newSessionId = uuidv4();
+    await Session.create({
+      id: newSessionId,
+      filename: originalSession.filename,
+      questions: originalSession.questions,
+      name: userName,
+      score: 0
+    });
+    
+    res.redirect(`/quiz/${newSessionId}`);
+  } catch (err) {
+    console.error(err);
+    res.redirect('/');
+  }
+});
+
+app.post('/api/delete-quiz/:sessionId', async (req, res) => {
+  try {
+    const session = await Session.findOneAndDelete({ id: req.params.sessionId });
+    if (!session) return res.status(404).json({ error: 'Quiz not found' });
+    
+    await logActivity(session.name, 'Deleted Quiz', session.filename);
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to delete quiz' });
   }
 });
 
